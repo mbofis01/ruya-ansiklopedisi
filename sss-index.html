@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rüya Ansiklopedisi: Rüyaların anlamları, İslam'da rüya, Kur'an ve hadislerde rüyalar, rüya sembolleri ve büyük rüya yorumcuları.">
+<meta name="keywords" content="rüya ansiklopedisi, rüya tabirleri, rüya yorumları, İbn Sirin, Nablusi, rüyada balık, rüyada ekmek">
+<title>Rüya Ansiklopedisi | Rüyaların Gizemli Dünyası</title>
+<style>
+:root {
+  --navy:#182d43;
+  --gold:#c29a55;
+  --cream:#faf8f3;
+  --text:#293746;
+  --muted:#788493;
+  --white:#fff;
+  --border:#e9e5dc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:var(--cream);color:var(--text);
+ font-family:Georgia,"Times New Roman",serif;line-height:1.75;
+}
+a{color:inherit;text-decoration:none}
+header{
+ background:var(--navy);color:white;
+ padding:18px 6%;position:sticky;top:0;z-index:20;
+ box-shadow:0 3px 15px #0002;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:23px;font-weight:bold;color:#e5c48c}
+nav{display:flex;gap:20px;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:13px}
+nav a:hover{color:#e5c48c}
+.hero{
+ min-height:440px;display:flex;align-items:center;justify-content:center;
+ text-align:center;padding:70px 20px;color:white;
+ background:linear-gradient(90deg,#102438dd,#10243899),
+ url("https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1800") center/cover;
+}
+.hero-content{max-width:850px}
+.hero h1{font-size:clamp(38px,7vw,68px);margin:0 0 15px;color:#f1d5a1}
+.hero p{font-size:19px;max-width:720px;margin:0 auto 25px}
+.hero small{color:#e8d9bb;letter-spacing:3px;text-transform:uppercase}
+.searchbox{
+ display:flex;max-width:650px;margin:30px auto 0;
+ background:white;border-radius:40px;overflow:hidden;padding:5px;
+}
+.searchbox input{flex:1;border:0;outline:0;padding:14px 20px;font-size:15px;min-width:0}
+.searchbox button{
+ border:0;background:var(--gold);color:white;padding:0 24px;
+ border-radius:30px;cursor:pointer;font-weight:bold;
+}
+.container{max-width:1160px;margin:auto;padding:55px 22px}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title small{color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.section-title h2{font-size:34px;color:var(--navy);margin:5px 0}
+.section-title p{color:var(--muted);font-family:Arial,sans-serif}
+.intro{
+ max-width:850px;margin:auto;text-align:center;font-size:18px;
+}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+ background:white;border:1px solid var(--border);border-radius:12px;
+ padding:24px;box-shadow:0 5px 18px #172d4308;
+ transition:.2s;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 25px #172d4315}
+.card .icon{font-size:30px}
+.card h3{color:var(--navy);margin:8px 0}
+.card p{font-family:Arial,sans-serif;color:#647181;font-size:14px}
+.tag{font:11px Arial,sans-serif;color:#9a763c;letter-spacing:1px}
+.dark-section{background:var(--navy);color:white}
+.dark-section .section-title h2{color:white}
+.dark-section .section-title p{color:#c6d0da}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.info-box{padding:25px;border-left:3px solid var(--gold);background:#ffffff0d}
+.info-box h3{color:#e6c68f}
+.article{max-width:850px;margin:auto}
+.article h3{color:var(--navy);margin-top:32px}
+.article p{font-size:16px}
+.symbol-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.symbol-tools input{
+ flex:1;min-width:200px;padding:13px;border:1px solid var(--border);
+ border-radius:8px;font-size:15px;
+}
+.chips button{
+ background:white;border:1px solid var(--border);padding:8px 13px;
+ border-radius:20px;cursor:pointer;margin:3px;color:var(--navy);
+}
+.chips button.active,.chips button:hover{background:var(--navy);color:white}
+.symbol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.symbol{
+ background:white;border:1px solid var(--border);padding:17px;
+ border-radius:9px;cursor:pointer;
+}
+.symbol:hover{border-color:var(--gold)}
+.symbol strong{display:block;color:var(--navy);font-size:17px}
+.symbol span{font-size:13px;color:var(--muted)}
+.symbol-detail{
+ display:none;margin-top:20px;background:#f0ebdf;padding:25px;
+ border-radius:10px;
+}
+.faq{max-width:900px;margin:auto}
+details{
+ background:white;margin-bottom:12px;border:1px solid var(--border);
+ border-radius:8px;padding:17px 20px;
+}
+summary{cursor:pointer;font-weight:bold;color:var(--navy)}
+details p{font-family:Arial,sans-serif;font-size:14px;color:#596675}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.person{text-align:center;background:white;padding:25px;border-radius:10px}
+.person .portrait{font-size:40px}
+.person h3{color:var(--navy)}
+footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
+footer strong{color:#e6c68f;font-size:22px}
+footer p{font:13px Arial,sans-serif}
+.notice{font:13px Arial,sans-serif;background:#f0ebdf;padding:15px;border-radius:8px}
+@media(max-width:800px){
+ .grid,.people{grid-template-columns:repeat(2,1fr)}
+ .symbol-grid{grid-template-columns:repeat(3,1fr)}
+ nav{display:none}
+ .two-col{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .grid,.people{grid-template-columns:1fr}
+ .symbol-grid{grid-template-columns:repeat(2,1fr)}
+ .hero{min-height:390px}
+ .container{padding:40px 16px}
+ .hero p{font-size:16px}
+ .section-title h2{font-size:27px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="nav">
+  <a class="logo" href="#">☾ RÜYA ANSİKLOPEDİSİ</a>
+  <nav>
+   <a href="#hakkinda">Rüya Nedir?</a>
+   <a href="#islam">İslam'da Rüya</a>
+   <a href="#tarih">Tarihçe</a>
+   <a href="#alimler">Âlimler</a>
+   <a href="#semboller">Rüya Sembolleri</a>
+   <a href="#sss">Sık Sorulanlar</a>
+  </nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="hero-content">
+  <small>RÜYALARIN GİZEMLİ DÜNYASINA HOŞ GELDİNİZ</small>
+  <h1>Rüya Ansiklopedisi</h1>
+  <p>Rüyaların anlamlarını keşfedin. Bilim, tarih, kültür ve İslam geleneği ışığında rüyaların dünyasına yolculuk yapın.</p>
+  <div class="searchbox">
+   <input id="mainSearch" placeholder="Rüyanızı veya merak ettiğiniz konuyu arayın...">
+   <button onclick="searchSite()">Ara</button>
+  </div>
+ </div>
+</section>
+
+<section class="container" id="hakkinda">
+ <div class="section-title">
+  <small>RÜYALARIN DÜNYASI</small>
+  <h2>Rüya Nedir?</h2>
+  <p>İnsanlığın binlerce yıldır cevap aradığı sorular</p>
+ </div>
+ <div class="intro">
+  <p>Rüya, insanın uyku sırasında zihninde meydana gelen görüntü, ses, duygu ve olaylardan oluşan bir deneyimdir. Bazen günlük yaşantımızın izlerini taşır, bazen de bizi şaşırtan, düşündüren ve meraklandıran bir hikâyeye dönüşür.</p>
+  <p>Rüyalar; bilim, psikoloji, din, felsefe ve tasavvuf açısından farklı şekillerde incelenmiştir. Rüya Ansiklopedisi bu farklı yaklaşımları bir araya getirerek kapsamlı bir bilgi kaynağı sunmayı amaçlar.</p>
+ </div>
+</section>
+
+<section class="container">
+ <div class="section-title">
+  <small>KEŞFET</small>
+  <h2>Rüya Dünyasının Ana Başlıkları</h2>
+  <p>Merak ettiğiniz konuyu seçerek okumaya başlayın.</p>
+ </div>
+ <div class="grid">
+  <a href="#bilim" class="card"><div class="icon">🧠</div><h3>Rüya ve Bilim</h3><p>Uyku, beyin, REM dönemi, hafıza ve rüyaların psikolojik yönü.</p></a>
+  <a href="#islam" class="card"><div class="icon">☪</div><h3>İslam'da Rüya</h3><p>Kur'an, hadisler, salih rüya ve İslam âlimlerinin yaklaşımları.</p></a>
+  <a href="#tarih" class="card"><div class="icon">📜</div><h3>Tarihte Rüyalar</h3><p>Tarih boyunca anlatılan ve gerçekleştiği bildirilen önemli rüyalar.</p></a>
+  <a href="#alimler" class="card"><div class="icon">📚</div><h3>Büyük Rüya Yorumcuları</h3><p>İbn Sîrîn, Nablusî, Artemidoros ve diğer düşünürler.</p></a>
+  <a href="#semboller" class="card"><div class="icon">🔮</div><h3>Rüya Sembolleri</h3><p>Hayvanlar, yiyecekler, insanlar, eşyalar, renkler ve mekânlar.</p></a>
+  <a href="#sss" class="card"><div class="icon">❔</div><h3>Sık Sorulan Sorular</h3><p>Rüyalar hakkında en çok merak edilen sorular ve cevapları.</p></a>
+ </div>
+</section>
+
+<section class="dark-section" id="bilim">
+ <div class="container">
+  <div class="section-title">
+   <small>BİLİMSEL YAKLAŞIM</small>
+   <h2>Rüyalar ve İnsan Beyni</h2>
+   <p>Uyurken zihnimizde neler oluyor?</p>
+  </div>
+  <div class="two-col">
+   <div class="info-box">
+    <h3>Niçin rüya görürüz?</h3>
+    <p>Rüya görmenin bütün nedenleri henüz kesin olarak açıklanmış değildir. Araştırmalar rüyaların hafıza, duyguların işlenmesi, öğrenme ve beyin faaliyetleriyle ilişkili olabileceğini göstermektedir.</p>
+   </div>
+   <div class="info-box">
+    <h3>Rüya kaç saniye sürer?</h3>
+    <p>Rüyalar birkaç saniyeyle sınırlı değildir. Birkaç dakika veya daha uzun süre devam edebilir. REM uykusu dönemleri ilerleyen sabah saatlerinde uzayabilir.</p>
+   </div>
+   <div class="info-box">
+    <h3>REM uykusu nedir?</h3>
+    <p>REM, hızlı göz hareketlerinin görüldüğü uyku dönemidir. Canlı ve hikâye biçimindeki rüyalar bu dönemde daha sık hatırlanır. Ancak rüyalar diğer uyku evrelerinde de görülebilir.</p>
+   </div>
+   <div class="info-box">
+    <h3>Herkes rüya görür mü?</h3>
+    <p>İnsanlar genel olarak rüya görür. Ancak herkes rüyalarını aynı sıklıkta hatırlamaz. Uyanma zamanı, uyku düzeni ve bireysel farklılıklar hatırlamayı etkileyebilir.</p>
+   </div>
+   <div class="info-box">
+    <h3>Neden rüyalarımızı unuturuz?</h3>
+    <p>Rüya sırasında oluşan anılar uyanık hayattaki anılar gibi her zaman kalıcı biçimde kodlanmaz. Uyandıktan kısa süre sonra rüya içeriği unutulabilir.</p>
+   </div>
+   <div class="info-box">
+    <h3>Rüyalar psikolojimizi yansıtır mı?</h3>
+    <p>Rüyalar bazen kişinin duygularından, endişelerinden ve günlük yaşantısından etkilenebilir. Ancak tek bir rüyadan psikolojik durum hakkında kesin teşhis çıkarılamaz.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="container" id="islam">
+ <div class="section-title">
+  <small>MANEVİ VE DİNÎ YAKLAŞIM</small>
+  <h2>İslam'da Rüya</h2>
+  <p>Kur'an-ı Kerim, hadisler ve İslam düşüncesinde rüya</p>
+ </div>
+ <div class="article">
+  <h3>İslam'da rüya nasıl değerlendirilir?</h3>
+  <p>İslam geleneğinde rüyalar genel olarak salih veya güzel rüyalar, kişinin kendi düşüncelerinden kaynaklanan rüyalar ve korkutucu rüyalar şeklinde ele alınır. Bu tasnif hadislerde bildirilen üçlü ayrımla ilişkilidir.</p>
+  <h3>Kur'an-ı Kerim'de rüya</h3>
+  <p>Yusuf Suresi, rüya konusunun en ayrıntılı anlatıldığı bölümlerden biridir. Hz. Yusuf'un çocukluk rüyası, zindandaki iki kişinin rüyası ve Mısır hükümdarının rüyası bu surede anlatılır.</p>
+  <p>Diğer önemli örnekler Sâffât Suresi 102. ayette Hz. İbrahim'in rüyası, Fetih Suresi 27. ayette ise Hz. Muhammed'in müjdeleyici rüyasıdır.</p>
+  <h3>Hadislerde rüya</h3>
+  <p>Sahih-i Buhârî ve Sahih-i Müslim'de güzel rüya, kötü rüya, rüyayı paylaşma ve kötü rüyadan Allah'a sığınma konularında hadisler bulunmaktadır.</p>
+  <h3>Güzel rüya gördüğümüzde ne yapmalıyız?</h3>
+  <p>Allah'a hamdetmek ve dilersek sevdiğimiz, güvendiğimiz kişilerle paylaşmak tavsiye edilir.</p>
+  <h3>Kötü rüya gördüğümüzde ne yapmalıyız?</h3>
+  <p>Allah'a sığınmak, sol tarafa üç defa hafifçe üflemek ve rüyayı başkalarına anlatmamak hadislerde bildirilen tavsiyeler arasındadır.</p>
+  <h3>Rüyalar dinî hüküm kaynağı mıdır?</h3>
+  <p>Hayır. Rüyalar dinî hüküm koyma, helal veya haram belirleme kaynağı değildir. Hayatla ilgili kararlar yalnızca rüyalara dayandırılmamalıdır.</p>
+ </div>
+</section>
+
+<section class="container" id="tarih">
+ <div class="section-title">
+  <small>GEÇMİŞTEN GÜNÜMÜZE</small>
+  <h2>Tarihte Görülen Önemli Rüyalar</h2>
+  <p>Dinî metinlerde ve tarihî anlatılarda yer alan rüyalar</p>
+ </div>
+ <div class="grid">
+  <div class="card"><div class="icon">⭐</div><h3>Hz. Yusuf'un Rüyası</h3><p>Güneş, ay ve on bir yıldızın kendisine secde ettiğini görmesi. Yusuf Suresi 4. ayet.</p></div>
+  <div class="card"><div class="icon">🐄</div><h3>Mısır Hükümdarının Rüyası</h3><p>Yedi semiz ve yedi zayıf inek ile yedi yeşil ve yedi kuru başak. Yusuf Suresi 43-49.</p></div>
+  <div class="card"><div class="icon">🐑</div><h3>Hz. İbrahim'in Rüyası</h3><p>Oğlunu kurban ettiğini görmesi ve teslimiyet kıssası. Sâffât Suresi 102. ayet.</p></div>
+  <div class="card"><div class="icon">🕋</div><h3>Hudeybiye ile İlgili Rüya</h3><p>Müslümanların Mescid-i Haram'a güven içinde girmeleriyle ilgili müjde. Fetih Suresi 27. ayet.</p></div>
+  <div class="card"><div class="icon">📖</div><h3>Zindandaki İki Kişinin Rüyası</h3><p>Hz. Yusuf'un hapishanede iki kişinin gördüğü rüyaları yorumlaması. Yusuf Suresi 36.</p></div>
+  <div class="card"><div class="icon">🌙</div><h3>Salih Rüyalar</h3><p>Hadislerde Hz. Muhammed'in gördüğü ve gerçekleştiği bildirilen müjdeleyici rüyalar.</p></div>
+ </div>
+</section>
+
+<section class="container" id="alimler">
+ <div class="section-title">
+  <small>RÜYA İLMİNİN ÖNEMLİ İSİMLERİ</small>
+  <h2>Büyük Rüya Yorumcuları ve Düşünürler</h2>
+  <p>Farklı çağlardan rüya araştırmacıları</p>
+ </div>
+ <div class="people">
+  <div class="person"><div class="portrait">📜</div><h3>İbn Sîrîn</h3><p>653-729. İslam dünyasında rüya tabiri geleneğinin en çok tanınan isimlerinden. Ona nispet edilen eserlerin aidiyeti konusunda ihtiyat gerekir.</p></div>
+  <div class="person"><div class="portrait">📚</div><h3>İmam Nablusî</h3><p>1641-1731. Ta'tîrü'l-Enâm adlı kapsamlı rüya tabiri eseriyle tanınır.</p></div>
+  <div class="person"><div class="portrait">🏛️</div><h3>Artemidoros</h3><p>MS 2. yüzyıl. Antik Yunan rüya yorumcusu. Oneirocritica adlı beş kitaplık eserin yazarıdır.</p></div>
+  <div class="person"><div class="portrait">🌿</div><h3>İbn Haldun</h3><p>1332-1406. Mukaddime'de insanın algısı, ruh ve rüya konularına yer verir.</p></div>
+  <div class="person"><div class="portrait">✨</div><h3>İbnü'l-Arabî</h3><p>1165-1240. Hayal âlemi, semboller ve manevi idrak konularındaki düşünceleriyle tanınır.</p></div>
+  <div class="person"><div class="portrait">🕌</div><h3>İmam Gazâlî</h3><p>1058-1111. Kalp, ruh, hayal ve manevi idrak üzerine önemli değerlendirmelerde bulunmuştur.</p></div>
+ </div>
+</section>
+
+<section class="container" id="semboller">
+ <div class="section-title">
+  <small>RÜYA TABİRLERİ</small>
+  <h2>A'dan Z'ye Rüya Sembolleri</h2>
+  <p>Merak ettiğiniz sembolü arayın ve geleneksel yorumlarını inceleyin.</p>
+ </div>
+ <div class="symbol-tools">
+  <input id="symbolSearch" placeholder="Örnek: Balık, ekmek, yılan, su..." oninput="filterSymbols()">
+ </div>
+ <div class="chips" id="categories">
+  <button class="active" onclick="setCategory('Tümü',this)">Tümü</button>
+  <button onclick="setCategory('Hayvanlar',this)">Hayvanlar</button>
+  <button onclick="setCategory('Yiyecekler',this)">Yiyecekler</button>
+  <button onclick="setCategory('Doğa',this)">Doğa</button>
+  <button onclick="setCategory('İnsanlar',this)">İnsanlar</button>
+  <button onclick="setCategory('Eşyalar',this)">Eşyalar</button>
+  <button onclick="setCategory('Diğer',this)">Diğer</button>
+ </div>
+ <div class="symbol-grid" id="symbolGrid"></div>
+ <div class="symbol-detail" id="symbolDetail"></div>
+ <p class="notice">Bilgilendirme: Buradaki sembol açıklamaları geleneksel rüya tabiri anlayışından örneklerdir. Kesin dinî bilgi veya geleceğe ilişkin garanti değildir. Rüyanın bütünü ve kişinin durumu önemlidir.</p>
+</section>
+
+<section class="container" id="sss">
+ <div class="section-title">
+  <small>MERAK EDİLENLER</small>
+  <h2>Rüya Hakkında Sık Sorulan Sorular</h2>
+  <p>Rüyalarla ilgili en çok sorulan soruların cevapları</p>
+ </div>
+ <div class="faq" id="faqList">
+  <details><summary>1. Her rüyanın bir anlamı var mıdır?</summary><p>Hayır. Bazı rüyalar günlük yaşantı, hafıza, duygu ve düşüncelerin yansıması olabilir. Her rüyaya özel bir mesaj yüklemek doğru değildir.</p></details>
+  <details><summary>2. Rüyalar geleceği haber verir mi?</summary><p>İslam geleneğinde bazı salih rüyaların müjdeleyici olabileceği kabul edilir. Ancak her rüyanın geleceği haber verdiği söylenemez.</p></details>
+  <details><summary>3. Rüyamızı kimlere anlatmalıyız?</summary><p>Güzel rüyalar, bizi seven ve iyiliğimizi isteyen güvenilir kişilerle paylaşılabilir. Kötü rüyaları anlatmamak hadislerde tavsiye edilmiştir.</p></details>
+  <details><summary>4. Kötü rüya gördüğümüzde ne yapmalıyız?</summary><p>Allah'a sığınmak, sol tarafa üç defa hafifçe üflemek ve rüyayı başkalarına anlatmamak hadislerde bildirilen tavsiyelerdir.</p></details>
+  <details><summary>5. Aynı rüyayı tekrar tekrar görmek ne anlama gelir?</summary><p>Tekrarlanan rüyalar kişinin zihnini meşgul eden konular, kaygılar veya duygularla ilişkili olabilir. Tek başına belirli bir anlama gelmez.</p></details>
+  <details><summary>6. Sabah görülen rüyalar daha mı doğrudur?</summary><p>Sabah görülen her rüyanın daha doğru olduğuna ilişkin kesin bir dinî hüküm bulunmaz. Sabah saatlerinde REM dönemleri uzayabilir.</p></details>
+  <details><summary>7. Rüyada ölmüş birini görmek ne demektir?</summary><p>Özlem, hatıra ve duygusal bağlarla ilişkili olabilir. Geleneksel tabirlerde çeşitli yorumlar vardır; rüyadan kişinin ahiretteki durumu hakkında kesin hüküm çıkarılamaz.</p></details>
+  <details><summary>8. Rüyada peygamber görmek mümkün müdür?</summary><p>Sahih hadislerde Hz. Muhammed'i rüyada görmekle ilgili müjdeler vardır. Bununla birlikte rüya, dinî hükümlerin kaynağı olamaz.</p></details>
+  <details><summary>9. Rüyalar neden unutulur?</summary><p>Rüya anıları uyanıkken oluşan anılar gibi kalıcı kodlanmayabilir. Bu nedenle uyanınca kısa süre içinde unutulabilir.</p></details>
+  <details><summary>10. Rüya tabiri kesin midir?</summary><p>Hayır. Rüya yorumu ihtimale dayalıdır. Aynı sembol farklı kişiler için farklı çağrışımlar taşıyabilir.</p></details>
+  <details><summary>11. Rüyada ağlamak ne anlama gelir?</summary><p>Geleneksel tabirlerde ağlamak bazen ferahlık, bazen üzüntüyle ilişkilendirilir. Rüyanın nasıl geliştiği ve hissedilen duygu önemlidir.</p></details>
+  <details><summary>12. Rüyada uçmak ne anlama gelir?</summary><p>Geleneksel yorumlarda özgürlük, yükselme, yolculuk veya değişim gibi anlamlarla ilişkilendirilebilir. Kesin bir anlamı yoktur.</p></details>
+  <details><summary>13. Rüyada ev görmek ne demektir?</summary><p>Ev sembolü geleneksel yorumlarda aile, güven, kişinin özel hayatı ve yaşam düzeniyle ilişkilendirilir.</p></details>
+  <details><summary>14. Rüyada yılan görmek ne anlama gelir?</summary><p>Geleneksel tabirlerde yılan bazen düşmanlık ve tehlikeyle ilişkilendirilir. Ancak her yılan rüyasını düşman olarak yorumlamak doğru değildir.</p></details>
+  <details><summary>15. Rüyalarımıza göre karar vermeli miyiz?</summary><p>Önemli kararlar rüyaya dayanarak verilmemelidir. Akıl, bilgi, istişare ve gerçek hayat şartları dikkate alınmalıdır.</p></details>
+  <details><summary>16. Rüyada su görmek ne anlama gelir?</summary><p>Su, geleneksel tabirlerde hayat, temizlik, ilim ve bereketle ilişkilendirilebilir. Suyun temiz, bulanık veya akıyor olması yorumu değiştirebilir.</p></details>
+  <details><summary>17. Rüyada altın görmek ne anlama gelir?</summary><p>Altın bazı yorumlarda zenginlik, değer ve kazanç; bazı yorumlarda ise sıkıntı ve sorumlulukla ilişkilendirilir.</p></details>
+  <details><summary>18. Rüyada bebek görmek ne anlama gelir?</summary><p>Geleneksel yorumlarda yeni başlangıçlar, sorumluluklar, sevinç ve umut gibi anlamlarla ilişkilendirilebilir.</p></details>
+  <details><summary>19. Rüyada ekmek görmek ne demektir?</summary><p>Ekmek geleneksel tabirlerde rızık, emek, geçim ve bereket sembolü olarak değerlendirilir.</p></details>
+  <details><summary>20. Rüyada balık görmek ne demektir?</summary><p>Balık, geleneksel yorumlarda kısmet, rızık, fırsat ve bollukla ilişkilendirilebilir. Balığın durumu ve rüyanın bütünü önemlidir.</p></details>
+  <details><summary>21. Rüya tabirini kim yapmalıdır?</summary><p>Rüya yorumu konusunda bilgili, ölçülü, iyi niyetli ve dinî kaynakları doğru değerlendiren kişiler tercih edilmelidir.</p></details>
+  <details><summary>22. Rüyada korkmak ne anlama gelir?</summary><p>Rüya sırasında korkmak bazen günlük kaygıların ve duygusal yoğunluğun yansıması olabilir. Tek başına kötü bir olayın habercisi değildir.</p></details>
+  <details><summary>23. Rüyada para görmek ne anlama gelir?</summary><p>Geleneksel yorumlarda para; kazanç, ihtiyaç, sorumluluk, alışveriş veya anlaşmalarla ilişkilendirilir.</p></details>
+  <details><summary>24. Rüyada yağmur görmek ne anlama gelir?</summary><p>Yağmur, geleneksel yorumlarda rahmet, bereket ve yenilenmeyle ilişkilendirilebilir. Yağmurun zarar verip vermediği önemlidir.</p></details>
+  <details><summary>25. Rüyada diş dökülmesi ne anlama gelir?</summary><p>Bu rüya geleneksel tabirlerde farklı şekillerde yorumlanmıştır. Bilimsel açıdan ise rüya tek başına ölüm veya kayıp haberi değildir.</p></details>
+ </div>
+</section>
+
+<section class="container">
+ <div class="section-title">
+  <small>DOĞRU BİLGİ VE SAĞDUYU</small>
+  <h2>Rüya Yorumlarken Nelere Dikkat Etmeliyiz?</h2>
+ </div>
+ <div class="article">
+  <p>Bir rüyayı değerlendirirken yalnızca tek bir sembole odaklanmak yerine rüyanın tamamını düşünmek gerekir. Rüyayı gören kişinin yaşantısı, ruh hâli, rüyadaki olaylar ve hissettiği duygular önemlidir.</p>
+  <p>Rüya tabirleri kesin hükümler değildir. Korkutucu yorumlarla insanları endişeye sürüklemek, rüyaları kullanarak maddi veya manevi çıkar sağlamak doğru değildir.</p>
+  <p>Rüya, merak edilebilecek ve üzerinde düşünülebilecek bir deneyimdir; fakat hayatımızı yönlendiren tek ölçü olmamalıdır.</p>
+ </div>
+</section>
+
+<footer>
+ <strong>☾ Rüya Ansiklopedisi</strong>
+ <p>Rüyaların anlamlarını keşfedin, geçmişin bilgeliğiyle tanışın.</p>
+ <p>Bilim • Tarih • İslam • Tasavvuf • Rüya Sembolleri</p>
+ <p>© 2026 Rüya Ansiklopedisi. Bilgilendirme amacıyla hazırlanmıştır.</p>
+</footer>
+
+<script>
+const symbols = [
+["Balık","Hayvanlar","Rızık, kısmet, fırsat ve bollukla ilişkilendirilir. Balığın canlı, ölü veya suda olması yorumu değiştirebilir."],
+["Yılan","Hayvanlar","Geleneksel tabirlerde tehlike, düşmanlık veya korkuyla ilişkilendirilir. Her rüyada aynı anlamı taşımaz."],
+["Kuş","Hayvanlar","Özgürlük, haber, yolculuk ve umut gibi kavramları çağrıştırabilir."],
+["Kedi","Hayvanlar","Bağımsızlık, ev hayatı ve güven gibi temalarla ilişkilendirilebilir."],
+["Köpek","Hayvanlar","Sadakat, koruma, arkadaşlık veya tehdit algısını temsil edebilir."],
+["At","Hayvanlar","Güç, yolculuk, hareket ve başarıyla ilişkilendirilir."],
+["Aslan","Hayvanlar","Güç, cesaret, otorite ve mücadele sembolü olarak yorumlanabilir."],
+["Güvercin","Hayvanlar","Barış, huzur ve güzel haber çağrışımı taşır."],
+["Arı","Hayvanlar","Çalışkanlık, üretkenlik ve emekle elde edilen kazancı simgeleyebilir."],
+["Örümcek","Hayvanlar","Sabır, ağ kurma ve karmaşık durumlarla ilişkilendirilebilir."],
+["Kelebek","Hayvanlar","Değişim, dönüşüm ve yenilenmeyi çağrıştırabilir."],
+["Fare","Hayvanlar","Küçük kaygılar, rahatsızlık veya gizli sorunlarla ilişkilendirilebilir."],
+["Ekmek","Yiyecekler","Rızık, geçim, emek, bereket ve kazançla ilişkilendirilir."],
+["Bal","Yiyecekler","Tatlılık, şifa, bereket ve güzel söz çağrışımı taşır."],
+["Süt","Yiyecekler","Fıtrat, beslenme, saflık ve helal rızıkla ilişkilendirilir."],
+["Elma","Yiyecekler","Geleneksel yorumlarda kazanç, arzu ve meyve veren emekle ilişkilendirilebilir."],
+["Üzüm","Yiyecekler","Bereket, bolluk, kazanç ve mevsimsel nimetlerle ilişkilendirilebilir."],
+["Peynir","Yiyecekler","Geçim, birikim ve kazanç gibi temaları çağrıştırabilir."],
+["Et","Yiyecekler","Rızık, güç ve geleneksel tabirlerde farklı durumlara göre kazançla ilişkilendirilir."],
+["Tuz","Yiyecekler","Koruma, paylaşım, geçim ve günlük yaşamı simgeleyebilir."],
+["Su","Doğa","Hayat, temizlik, ilim ve bereketle ilişkilendirilebilir. Temiz veya bulanık olması önemlidir."],
+["Deniz","Doğa","Derinlik, bilinmeyen, güç ve geniş imkânları çağrıştırabilir."],
+["Yağmur","Doğa","Rahmet, bereket, arınma ve yenilenme sembolü olarak yorumlanabilir."],
+["Kar","Doğa","Sakinlik, temizlik, soğukluk veya bekleyiş gibi anlamlar taşıyabilir."],
+["Güneş","Doğa","Aydınlık, güç, hayat ve otoriteyi çağrıştırabilir."],
+["Ay","Doğa","Geleneksel yorumlarda güzellik, zaman ve manevi aydınlıkla ilişkilendirilir."],
+["Yıldız","Doğa","Umut, yön bulma, hedef ve yüksek idealleri çağrıştırabilir."],
+["Dağ","Doğa","Güç, engel, dayanıklılık ve hedeflerle ilişkilendirilebilir."],
+["Ağaç","Doğa","Kökler, aile, gelişim, yaşam ve bereketi temsil edebilir."],
+["Çiçek","Doğa","Güzellik, sevgi, geçici mutluluk ve yenilenmeyi çağrıştırabilir."],
+["Ateş","Doğa","Enerji, öfke, dönüşüm veya tehlikeyle ilişkilendirilebilir."],
+["Rüzgâr","Doğa","Değişim, hareket ve beklenmedik gelişmeleri çağrıştırabilir."],
+["Anne","İnsanlar","Şefkat, koruma, bağlılık ve güven temalarını yansıtabilir."],
+["Baba","İnsanlar","Otorite, destek, sorumluluk ve aile bağlarını simgeleyebilir."],
+["Bebek","İnsanlar","Yeni başlangıç, umut, sevinç veya yeni sorumluluklarla ilişkilendirilir."],
+["Çocuk","İnsanlar","Masumiyet, gelecek, öğrenme ve sorumluluk çağrışımı taşır."],
+["Ölü","İnsanlar","Özlem, hatıralar, değişim veya geçmişle ilgili duygularla bağlantılı olabilir."],
+["Düğün","İnsanlar","Birleşme, değişim, mutluluk veya yeni sorumlulukları çağrıştırabilir."],
+["Arkadaş","İnsanlar","Sosyal bağlar, güven, destek ve paylaşımı temsil edebilir."],
+["Ev","Eşyalar","Aile, güven, özel yaşam ve kişinin iç dünyasıyla ilişkilendirilir."],
+["Anahtar","Eşyalar","Çözüm, fırsat, kapı açılması ve yeni imkânları çağrıştırabilir."],
+["Kapı","Eşyalar","Geçiş, değişim, fırsat ve yeni bir dönemi simgeleyebilir."],
+["Araba","Eşyalar","Hayat yolculuğu, kontrol, hareket ve hedeflerle ilişkilendirilebilir."],
+["Yüzük","Eşyalar","Bağlılık, söz, ilişki ve sorumlulukları çağrıştırabilir."],
+["Ayna","Eşyalar","Kişinin kendini değerlendirmesi, kimlik ve öz farkındalıkla ilişkilendirilebilir."],
+["Kitap","Eşyalar","Bilgi, öğrenme, hikmet ve araştırmayı temsil edebilir."],
+["Altın","Eşyalar","Değer, zenginlik, arzu ve geleneksel yorumlarda bazen sorumlulukla ilişkilendirilir."],
+["Para","Eşyalar","Kazanç, ihtiyaç, alışveriş, emek ve maddi sorumlulukları çağrıştırabilir."],
+["Saat","Eşyalar","Zaman, bekleyiş, planlama ve hayatın geçiciliğiyle ilişkilendirilebilir."],
+["Telefon","Eşyalar","İletişim, haberleşme ve sosyal ilişkilerle bağlantılı olabilir."],
+["Yol","Diğer","Hayat yolculuğu, karar, değişim ve hedefleri çağrıştırabilir."],
+["Uçmak","Diğer","Özgürlük, yükselme, başarı veya kontrol arzusuyla ilişkilendirilebilir."],
+["Düşmek","Diğer","Güvensizlik, kaygı, kontrol kaybı veya değişim hissini yansıtabilir."],
+["Ağlamak","Diğer","Duygusal boşalma, üzüntü veya rahatlama ile ilişkili olabilir."],
+["Gülmek","Diğer","Sevinç, rahatlama veya bazen bastırılmış duyguları çağrıştırabilir."],
+["Ölüm","Diğer","Geleneksel yorumlarda değişim ve dönüşümle ilişkilendirilebilir; gerçek ölümün habercisi değildir."],
+["Merdiven","Diğer","Aşama aşama ilerleme, yükselme ve hedeflere ulaşma çabasını simgeleyebilir."],
+["Okul","Diğer","Öğrenme, sınav, gelişim ve sorumlulukları çağrıştırabilir."],
+["Cami","Diğer","Maneviyat, ibadet, huzur ve toplulukla ilişkilendirilebilir."]
+];
+
+let selectedCategory="Tümü";
+function renderSymbols(){
+ const q=document.getElementById("symbolSearch").value.toLocaleLowerCase("tr");
+ const grid=document.getElementById("symbolGrid");
+ const filtered=symbols.filter(s=>
+  (selectedCategory==="Tümü"||s[1]===selectedCategory)&&
+  (s[0].toLocaleLowerCase("tr").includes(q)||s[2].toLocaleLowerCase("tr").includes(q))
+ );
+ grid.innerHTML="";
+ filtered.forEach(s=>{
+  const el=document.createElement("div");
+  el.className="symbol";
+  const strong=document.createElement("strong");
+  strong.textContent=s[0];
+  const span=document.createElement("span");
+  span.textContent=s[1]+" • İncele";
+  el.append(strong,span);
+  el.onclick=()=>showSymbol(s);
+  grid.appendChild(el);
+ });
+ if(!filtered.length) grid.textContent="Aradığınız sembol bulunamadı.";
+}
+function showSymbol(s){
+ const d=document.getElementById("symbolDetail");
+ d.style.display="block";
+ d.innerHTML="";
+ const title=document.createElement("h3");
+ title.textContent="Rüyada "+s[0]+" görmek";
+ const category=document.createElement("p");
+ category.textContent="Kategori: "+s[1];
+ const description=document.createElement("p");
+ description.textContent=s[2];
+ const note=document.createElement("small");
+ note.textContent="Bu açıklama geleneksel ve genel bir yorumdur. Kesin anlam taşımaz.";
+ d.append(title,category,description,note);
+ d.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function setCategory(c,btn){
+ selectedCategory=c;
+ document.querySelectorAll("#categories button").forEach(b=>b.classList.remove("active"));
+ btn.classList.add("active");
+ renderSymbols();
+}
+function filterSymbols(){renderSymbols();}
+function searchSite(){
+ const q=document.getElementById("mainSearch").value.trim().toLocaleLowerCase("tr");
+ if(!q)return;
+ document.getElementById("symbolSearch").value=q;
+ selectedCategory="Tümü";
+ document.querySelectorAll("#categories button").forEach(b=>b.classList.remove("active"));
+ document.querySelector("#categories button").classList.add("active");
+ renderSymbols();
+ document.getElementById("semboller").scrollIntoView({behavior:"smooth"});
+ const match=symbols.find(s=>s[0].toLocaleLowerCase("tr").includes(q));
+ if(match)showSymbol(match);
+ else{
+  const faq=[...document.querySelectorAll("#faqList details")];
+  const found=faq.find(d=>d.textContent.toLocaleLowerCase("tr").includes(q));
+  if(found){
+   document.getElementById("sss").scrollIntoView({behavior:"smooth"});
+   found.open=true;
+  }
+ }
+}
+document.getElementById("mainSearch").addEventListener("keydown",e=>{
+ if(e.key==="Enter")searchSite();
+});
+renderSymbols();
+</script>
+</body>
+</html>
