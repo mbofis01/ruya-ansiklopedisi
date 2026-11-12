@@ -1,361 +1,178 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rüya Ansiklopedisi: Rüyaların anlamları, İslam'da rüya, Kur'an ve hadislerde rüyalar, rüya sembolleri ve büyük rüya yorumcuları.">
+<meta name="description" content="Rüya Ansiklopedisi: Rüyaların anlamları, rüya sembolleri, İslam'da rüya, Kur'an ve hadislerde rüyalar, tarihî rüyalar ve büyük rüya yorumcuları.">
 <meta name="keywords" content="rüya ansiklopedisi, rüya tabirleri, rüya yorumları, İbn Sirin, Nablusi, rüyada balık, rüyada ekmek">
 <title>Rüya Ansiklopedisi | Rüyaların Gizemli Dünyası</title>
 <style>
-:root {
-  --navy:#182d43;
-  --gold:#c29a55;
-  --cream:#faf8f3;
-  --text:#293746;
-  --muted:#788493;
-  --white:#fff;
-  --border:#e9e5dc;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
- margin:0;background:var(--cream);color:var(--text);
- font-family:Georgia,"Times New Roman",serif;line-height:1.75;
-}
+:root{--navy:#182d43;--gold:#c29a55;--cream:#faf8f3;--text:#293746;--muted:#788493;--white:#fff;--border:#e9e5dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.75}
 a{color:inherit;text-decoration:none}
-header{
- background:var(--navy);color:white;
- padding:18px 6%;position:sticky;top:0;z-index:20;
- box-shadow:0 3px 15px #0002;
-}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:23px;font-weight:bold;color:#e5c48c}
-nav{display:flex;gap:20px;flex-wrap:wrap;font-family:Arial,sans-serif;font-size:13px}
+header{background:var(--navy);color:white;padding:12px 5%;position:sticky;top:0;z-index:20;box-shadow:0 3px 15px #0002}
+.brand-row{display:flex;justify-content:center;align-items:center;padding:0 0 10px}
+.brand-link{display:block;line-height:0;border-radius:4px;transition:opacity .2s}
+.brand-link:hover{opacity:.88}
+.brand-link img{display:block;width:min(340px,85vw);height:auto}
+.nav{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;border-top:1px solid #ffffff20;padding-top:9px}
+nav a{font:13px Arial,sans-serif;color:#f2f3f5}
 nav a:hover{color:#e5c48c}
-.hero{
- min-height:440px;display:flex;align-items:center;justify-content:center;
- text-align:center;padding:70px 20px;color:white;
- background:linear-gradient(90deg,#102438dd,#10243899),
- url("https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1800") center/cover;
-}
-.hero-content{max-width:850px}
-.hero h1{font-size:clamp(38px,7vw,68px);margin:0 0 15px;color:#f1d5a1}
-.hero p{font-size:19px;max-width:720px;margin:0 auto 25px}
-.hero small{color:#e8d9bb;letter-spacing:3px;text-transform:uppercase}
-.searchbox{
- display:flex;max-width:650px;margin:30px auto 0;
- background:white;border-radius:40px;overflow:hidden;padding:5px;
-}
+.hero{min-height:440px;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;color:white;background:linear-gradient(90deg,#102438e8,#102438a8),url("https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1800") center/cover}
+.hero-content{max-width:850px}.hero h1{font-size:clamp(38px,7vw,68px);margin:0 0 15px;color:#f1d5a1}
+.hero p{font-size:19px;max-width:720px;margin:0 auto 25px}.hero small{color:#e8d9bb;letter-spacing:3px;text-transform:uppercase}
+.searchbox{display:flex;max-width:650px;margin:30px auto 0;background:white;border-radius:40px;overflow:hidden;padding:5px}
 .searchbox input{flex:1;border:0;outline:0;padding:14px 20px;font-size:15px;min-width:0}
-.searchbox button{
- border:0;background:var(--gold);color:white;padding:0 24px;
- border-radius:30px;cursor:pointer;font-weight:bold;
-}
+.searchbox button{border:0;background:var(--gold);color:white;padding:0 24px;border-radius:30px;cursor:pointer;font-weight:bold}
 .container{max-width:1160px;margin:auto;padding:55px 22px}
-.section-title{text-align:center;margin-bottom:35px}
-.section-title small{color:var(--gold);letter-spacing:2px;text-transform:uppercase}
-.section-title h2{font-size:34px;color:var(--navy);margin:5px 0}
-.section-title p{color:var(--muted);font-family:Arial,sans-serif}
-.intro{
- max-width:850px;margin:auto;text-align:center;font-size:18px;
-}
+.section-title{text-align:center;margin-bottom:35px}.section-title small{color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.section-title h2{font-size:34px;color:var(--navy);margin:5px 0}.section-title p{color:var(--muted);font-family:Arial,sans-serif}
+.intro{max-width:850px;margin:auto;text-align:center;font-size:18px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{
- background:white;border:1px solid var(--border);border-radius:12px;
- padding:24px;box-shadow:0 5px 18px #172d4308;
- transition:.2s;
-}
+.card{background:white;border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:0 5px 18px #172d4308;transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 10px 25px #172d4315}
-.card .icon{font-size:30px}
-.card h3{color:var(--navy);margin:8px 0}
-.card p{font-family:Arial,sans-serif;color:#647181;font-size:14px}
-.tag{font:11px Arial,sans-serif;color:#9a763c;letter-spacing:1px}
-.dark-section{background:var(--navy);color:white}
-.dark-section .section-title h2{color:white}
-.dark-section .section-title p{color:#c6d0da}
+.card .icon{font-size:30px}.card h3{color:var(--navy);margin:8px 0}.card p{font-family:Arial,sans-serif;color:#647181;font-size:14px}
+.dark-section{background:var(--navy);color:white}.dark-section .section-title h2{color:white}.dark-section .section-title p{color:#c6d0da}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px}
 .info-box{padding:25px;border-left:3px solid var(--gold);background:#ffffff0d}
-.info-box h3{color:#e6c68f}
-.article{max-width:850px;margin:auto}
-.article h3{color:var(--navy);margin-top:32px}
-.article p{font-size:16px}
+.info-box h3{color:#e6c68f}.article{max-width:850px;margin:auto}.article h3{color:var(--navy);margin-top:32px}.article p{font-size:16px}
 .symbol-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
-.symbol-tools input{
- flex:1;min-width:200px;padding:13px;border:1px solid var(--border);
- border-radius:8px;font-size:15px;
-}
-.chips button{
- background:white;border:1px solid var(--border);padding:8px 13px;
- border-radius:20px;cursor:pointer;margin:3px;color:var(--navy);
-}
+.symbol-tools input{flex:1;min-width:200px;padding:13px;border:1px solid var(--border);border-radius:8px;font-size:15px}
+.chips button{background:white;border:1px solid var(--border);padding:8px 13px;border-radius:20px;cursor:pointer;margin:3px;color:var(--navy)}
 .chips button.active,.chips button:hover{background:var(--navy);color:white}
 .symbol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.symbol{
- background:white;border:1px solid var(--border);padding:17px;
- border-radius:9px;cursor:pointer;
-}
-.symbol:hover{border-color:var(--gold)}
-.symbol strong{display:block;color:var(--navy);font-size:17px}
-.symbol span{font-size:13px;color:var(--muted)}
-.symbol-detail{
- display:none;margin-top:20px;background:#f0ebdf;padding:25px;
- border-radius:10px;
-}
+.symbol{background:white;border:1px solid var(--border);padding:17px;border-radius:9px;cursor:pointer}
+.symbol:hover{border-color:var(--gold)}.symbol strong{display:block;color:var(--navy);font-size:17px}.symbol span{font-size:13px;color:var(--muted)}
+.symbol-detail{display:none;margin-top:20px;background:#f0ebdf;padding:25px;border-radius:10px}
 .faq{max-width:900px;margin:auto}
-details{
- background:white;margin-bottom:12px;border:1px solid var(--border);
- border-radius:8px;padding:17px 20px;
-}
+details{background:white;margin-bottom:12px;border:1px solid var(--border);border-radius:8px;padding:17px 20px}
 summary{cursor:pointer;font-weight:bold;color:var(--navy)}
 details p{font-family:Arial,sans-serif;font-size:14px;color:#596675}
 .people{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .person{text-align:center;background:white;padding:25px;border-radius:10px}
-.person .portrait{font-size:40px}
-.person h3{color:var(--navy)}
-footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
-footer strong{color:#e6c68f;font-size:22px}
-footer p{font:13px Arial,sans-serif}
+.person .portrait{font-size:40px}.person h3{color:var(--navy)}
 .notice{font:13px Arial,sans-serif;background:#f0ebdf;padding:15px;border-radius:8px}
-@media(max-width:800px){
- .grid,.people{grid-template-columns:repeat(2,1fr)}
- .symbol-grid{grid-template-columns:repeat(3,1fr)}
- nav{display:none}
- .two-col{grid-template-columns:1fr}
-}
-@media(max-width:520px){
- .grid,.people{grid-template-columns:1fr}
- .symbol-grid{grid-template-columns:repeat(2,1fr)}
- .hero{min-height:390px}
- .container{padding:40px 16px}
- .hero p{font-size:16px}
- .section-title h2{font-size:27px}
-}
+footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
+footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
+@media(max-width:800px){.grid,.people{grid-template-columns:repeat(2,1fr)}.symbol-grid{grid-template-columns:repeat(3,1fr)}.two-col{grid-template-columns:1fr}}
+@media(max-width:520px){.grid,.people{grid-template-columns:1fr}.symbol-grid{grid-template-columns:repeat(2,1fr)}.hero{min-height:390px}.container{padding:40px 16px}.hero p{font-size:16px}.section-title h2{font-size:27px}.nav{gap:10px 16px}.nav a{font-size:12px}}
 </style>
 </head>
 <body>
-
 <header>
- <div class="nav">
-  <a class="logo" href="#">☾ RÜYA ANSİKLOPEDİSİ</a>
-  <nav>
-   <a href="#hakkinda">Rüya Nedir?</a>
-   <a href="#islam">İslam'da Rüya</a>
-   <a href="#tarih">Tarihçe</a>
-   <a href="#alimler">Âlimler</a>
-   <a href="#semboller">Rüya Sembolleri</a>
-   <a href="#sss">Sık Sorulanlar</a>
-  </nav>
+ <div class="brand-row">
+  <a class="brand-link" href="https://mbofis01.github.io/ruya/" target="_blank" rel="noopener noreferrer" aria-label="Bünyamin Hoca web sitesine git">
+   <img src="data:image/png;base64,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" alt="Bünyamin Hoca">
+  </a>
  </div>
+ <nav class="nav">
+  <a href="#hakkinda">Rüya Nedir?</a><a href="#bilim">Rüya ve Bilim</a><a href="#islam">İslam'da Rüya</a>
+  <a href="#tarih">Tarihçe</a><a href="#alimler">Âlimler</a><a href="#semboller">Semboller</a><a href="#sss">Sık Sorulanlar</a>
+ </nav>
 </header>
 
-<section class="hero">
- <div class="hero-content">
-  <small>RÜYALARIN GİZEMLİ DÜNYASINA HOŞ GELDİNİZ</small>
-  <h1>Rüya Ansiklopedisi</h1>
-  <p>Rüyaların anlamlarını keşfedin. Bilim, tarih, kültür ve İslam geleneği ışığında rüyaların dünyasına yolculuk yapın.</p>
-  <div class="searchbox">
-   <input id="mainSearch" placeholder="Rüyanızı veya merak ettiğiniz konuyu arayın...">
-   <button onclick="searchSite()">Ara</button>
-  </div>
- </div>
+<section class="hero"><div class="hero-content">
+ <small>RÜYALARIN GİZEMLİ DÜNYASINA HOŞ GELDİNİZ</small><h1>Rüya Ansiklopedisi</h1>
+ <p>Rüyaların anlamlarını keşfedin. Bilim, tarih, kültür ve İslam geleneği ışığında rüyaların dünyasına yolculuk yapın.</p>
+ <div class="searchbox"><input id="mainSearch" placeholder="Rüyanızı veya merak ettiğiniz konuyu arayın..."><button onclick="searchSite()">Ara</button></div>
+</div></section>
+
+<section class="container" id="hakkinda"><div class="section-title"><small>RÜYALARIN DÜNYASI</small><h2>Rüya Nedir?</h2><p>İnsanlığın binlerce yıldır cevap aradığı sorular</p></div>
+<div class="intro"><p>Rüya, insanın uyku sırasında zihninde meydana gelen görüntü, ses, duygu ve olaylardan oluşan bir deneyimdir. Bazen günlük yaşantımızın izlerini taşır, bazen de bizi şaşırtan, düşündüren ve meraklandıran bir hikâyeye dönüşür.</p><p>Rüyalar; bilim, psikoloji, din, felsefe ve tasavvuf açısından farklı şekillerde incelenmiştir. Rüya Ansiklopedisi bu farklı yaklaşımları bir araya getirerek kapsamlı bir bilgi kaynağı sunmayı amaçlar.</p></div></section>
+
+<section class="container"><div class="section-title"><small>KEŞFET</small><h2>Rüya Dünyasının Ana Başlıkları</h2><p>Merak ettiğiniz konuyu seçerek okumaya başlayın.</p></div>
+<div class="grid">
+<a href="#bilim" class="card"><div class="icon">🧠</div><h3>Rüya ve Bilim</h3><p>Uyku, beyin, REM dönemi, hafıza ve rüyaların psikolojik yönü.</p></a>
+<a href="#islam" class="card"><div class="icon">☪</div><h3>İslam'da Rüya</h3><p>Kur'an, hadisler, salih rüya ve İslam âlimlerinin yaklaşımları.</p></a>
+<a href="#tarih" class="card"><div class="icon">📜</div><h3>Tarihte Rüyalar</h3><p>Tarih boyunca anlatılan ve gerçekleştiği bildirilen önemli rüyalar.</p></a>
+<a href="#alimler" class="card"><div class="icon">📚</div><h3>Büyük Rüya Yorumcuları</h3><p>İbn Sîrîn, Nablusî, Artemidoros ve diğer düşünürler.</p></a>
+<a href="#semboller" class="card"><div class="icon">🔮</div><h3>Rüya Sembolleri</h3><p>Hayvanlar, yiyecekler, insanlar, eşyalar, renkler ve mekânlar.</p></a>
+<a href="#sss" class="card"><div class="icon">❔</div><h3>Sık Sorulan Sorular</h3><p>Rüyalar hakkında en çok merak edilen sorular ve cevapları.</p></a>
+</div></section>
+
+<section class="dark-section" id="bilim"><div class="container"><div class="section-title"><small>BİLİMSEL YAKLAŞIM</small><h2>Rüyalar ve İnsan Beyni</h2><p>Uyurken zihnimizde neler oluyor?</p></div>
+<div class="two-col">
+<div class="info-box"><h3>Niçin rüya görürüz?</h3><p>Rüya görmenin bütün nedenleri henüz kesin olarak açıklanmış değildir. Araştırmalar rüyaların hafıza, duyguların işlenmesi, öğrenme ve beyin faaliyetleriyle ilişkili olabileceğini göstermektedir.</p></div>
+<div class="info-box"><h3>Rüya kaç saniye sürer?</h3><p>Rüyalar birkaç saniyeyle sınırlı değildir. Birkaç dakika veya daha uzun süre devam edebilir. REM uykusu dönemleri ilerleyen sabah saatlerinde uzayabilir.</p></div>
+<div class="info-box"><h3>REM uykusu nedir?</h3><p>REM, hızlı göz hareketlerinin görüldüğü uyku dönemidir. Canlı rüyalar bu dönemde daha sık hatırlanır. Ancak rüyalar diğer uyku evrelerinde de görülebilir.</p></div>
+<div class="info-box"><h3>Herkes rüya görür mü?</h3><p>İnsanlar genel olarak rüya görür. Ancak herkes rüyalarını aynı sıklıkta hatırlamaz. Uyanma zamanı, uyku düzeni ve bireysel farklılıklar hatırlamayı etkileyebilir.</p></div>
+<div class="info-box"><h3>Neden rüyalarımızı unuturuz?</h3><p>Rüya sırasında oluşan anılar uyanık hayattaki anılar gibi her zaman kalıcı biçimde kodlanmaz. Uyanınca rüya içeriği kısa sürede unutulabilir.</p></div>
+<div class="info-box"><h3>Rüyalar psikolojimizi yansıtır mı?</h3><p>Rüyalar bazen kişinin duygularından, endişelerinden ve günlük yaşantısından etkilenebilir. Tek bir rüyadan psikolojik durum hakkında kesin teşhis çıkarılamaz.</p></div>
+</div></div></section>
+
+<section class="container" id="islam"><div class="section-title"><small>MANEVİ VE DİNÎ YAKLAŞIM</small><h2>İslam'da Rüya</h2><p>Kur'an-ı Kerim, hadisler ve İslam düşüncesinde rüya</p></div>
+<div class="article">
+<h3>İslam'da rüya nasıl değerlendirilir?</h3><p>İslam geleneğinde rüyalar genel olarak salih veya güzel rüyalar, kişinin kendi düşüncelerinden kaynaklanan rüyalar ve korkutucu rüyalar şeklinde ele alınır. Bu tasnif hadislerde bildirilen üçlü ayrımla ilişkilidir.</p>
+<h3>Kur'an-ı Kerim'de rüya</h3><p>Yusuf Suresi, rüya konusunun en ayrıntılı anlatıldığı bölümlerden biridir. Hz. Yusuf'un çocukluk rüyası, zindandaki iki kişinin rüyası ve Mısır hükümdarının rüyası bu surede anlatılır. Diğer önemli örnekler Sâffât 102 ve Fetih 27. ayetleridir.</p>
+<h3>Hadislerde rüya</h3><p>Sahih-i Buhârî ve Sahih-i Müslim'de güzel rüya, kötü rüya, rüyayı paylaşma ve kötü rüyadan Allah'a sığınma konularında hadisler bulunmaktadır.</p>
+<h3>Güzel rüya gördüğümüzde ne yapmalıyız?</h3><p>Allah'a hamdetmek ve dilersek sevdiğimiz, güvendiğimiz kişilerle paylaşmak tavsiye edilir.</p>
+<h3>Kötü rüya gördüğümüzde ne yapmalıyız?</h3><p>Allah'a sığınmak, sol tarafa üç defa hafifçe üflemek ve rüyayı başkalarına anlatmamak hadislerde bildirilen tavsiyeler arasındadır.</p>
+<h3>Rüyalar dinî hüküm kaynağı mıdır?</h3><p>Hayır. Rüyalar dinî hüküm koyma, helal veya haram belirleme kaynağı değildir. Hayatla ilgili kararlar yalnızca rüyalara dayandırılmamalıdır.</p>
+</div></section>
+
+<section class="container" id="tarih"><div class="section-title"><small>GEÇMİŞTEN GÜNÜMÜZE</small><h2>Tarihte Görülen Önemli Rüyalar</h2><p>Dinî metinlerde ve tarihî anlatılarda yer alan rüyalar</p></div>
+<div class="grid">
+<div class="card"><div class="icon">⭐</div><h3>Hz. Yusuf'un Rüyası</h3><p>Güneş, ay ve on bir yıldızın kendisine secde ettiğini görmesi. Yusuf Suresi 4. ayet.</p></div>
+<div class="card"><div class="icon">🐄</div><h3>Mısır Hükümdarının Rüyası</h3><p>Yedi semiz ve yedi zayıf inek ile yedi yeşil ve yedi kuru başak. Yusuf Suresi 43-49.</p></div>
+<div class="card"><div class="icon">🐑</div><h3>Hz. İbrahim'in Rüyası</h3><p>Oğlunu kurban ettiğini görmesi ve teslimiyet kıssası. Sâffât Suresi 102. ayet.</p></div>
+<div class="card"><div class="icon">🕋</div><h3>Hudeybiye ile İlgili Rüya</h3><p>Müslümanların Mescid-i Haram'a güven içinde girmeleriyle ilgili müjde. Fetih Suresi 27. ayet.</p></div>
+<div class="card"><div class="icon">📖</div><h3>Zindandaki İki Kişinin Rüyası</h3><p>Hz. Yusuf'un hapishanede iki kişinin gördüğü rüyaları yorumlaması. Yusuf Suresi 36.</p></div>
+<div class="card"><div class="icon">🌙</div><h3>Salih Rüyalar</h3><p>Hadislerde Hz. Muhammed'in gördüğü ve gerçekleştiği bildirilen müjdeleyici rüyalar.</p></div>
+</div></section>
+
+<section class="container" id="alimler"><div class="section-title"><small>RÜYA İLMİNİN ÖNEMLİ İSİMLERİ</small><h2>Büyük Rüya Yorumcuları ve Düşünürler</h2><p>Farklı çağlardan rüya araştırmacıları</p></div>
+<div class="people">
+<div class="person"><div class="portrait">📜</div><h3>İbn Sîrîn</h3><p>653-729. İslam dünyasında rüya tabiri geleneğinin en çok tanınan isimlerinden. Ona nispet edilen eserlerin aidiyeti konusunda ihtiyat gerekir.</p></div>
+<div class="person"><div class="portrait">📚</div><h3>İmam Nablusî</h3><p>1641-1731. Ta'tîrü'l-Enâm adlı kapsamlı rüya tabiri eseriyle tanınır.</p></div>
+<div class="person"><div class="portrait">🏛️</div><h3>Artemidoros</h3><p>MS 2. yüzyıl. Antik Yunan rüya yorumcusu. Oneirocritica adlı beş kitaplık eserin yazarıdır.</p></div>
+<div class="person"><div class="portrait">🌿</div><h3>İbn Haldun</h3><p>1332-1406. Mukaddime'de insanın algısı, ruh ve rüya konularına yer verir.</p></div>
+<div class="person"><div class="portrait">✨</div><h3>İbnü'l-Arabî</h3><p>1165-1240. Hayal âlemi, semboller ve manevi idrak konularındaki düşünceleriyle tanınır.</p></div>
+<div class="person"><div class="portrait">🕌</div><h3>İmam Gazâlî</h3><p>1058-1111. Kalp, ruh, hayal ve manevi idrak üzerine önemli değerlendirmelerde bulunmuştur.</p></div>
+</div></section>
+
+<section class="container" id="semboller"><div class="section-title"><small>RÜYA TABİRLERİ</small><h2>A'dan Z'ye Rüya Sembolleri</h2><p>Merak ettiğiniz sembolü arayın ve geleneksel yorumlarını inceleyin.</p></div>
+<div class="symbol-tools"><input id="symbolSearch" placeholder="Örnek: Balık, ekmek, yılan, su..." oninput="filterSymbols()"></div>
+<div class="chips" id="categories">
+<button class="active" onclick="setCategory('Tümü',this)">Tümü</button><button onclick="setCategory('Hayvanlar',this)">Hayvanlar</button><button onclick="setCategory('Yiyecekler',this)">Yiyecekler</button><button onclick="setCategory('Doğa',this)">Doğa</button><button onclick="setCategory('İnsanlar',this)">İnsanlar</button><button onclick="setCategory('Eşyalar',this)">Eşyalar</button><button onclick="setCategory('Diğer',this)">Diğer</button>
+</div>
+<div class="symbol-grid" id="symbolGrid"></div><div class="symbol-detail" id="symbolDetail"></div>
+<p class="notice">Bilgilendirme: Buradaki sembol açıklamaları geleneksel rüya tabiri anlayışından örneklerdir. Kesin dinî bilgi veya geleceğe ilişkin garanti değildir. Rüyanın bütünü ve kişinin durumu önemlidir.</p>
 </section>
 
-<section class="container" id="hakkinda">
- <div class="section-title">
-  <small>RÜYALARIN DÜNYASI</small>
-  <h2>Rüya Nedir?</h2>
-  <p>İnsanlığın binlerce yıldır cevap aradığı sorular</p>
- </div>
- <div class="intro">
-  <p>Rüya, insanın uyku sırasında zihninde meydana gelen görüntü, ses, duygu ve olaylardan oluşan bir deneyimdir. Bazen günlük yaşantımızın izlerini taşır, bazen de bizi şaşırtan, düşündüren ve meraklandıran bir hikâyeye dönüşür.</p>
-  <p>Rüyalar; bilim, psikoloji, din, felsefe ve tasavvuf açısından farklı şekillerde incelenmiştir. Rüya Ansiklopedisi bu farklı yaklaşımları bir araya getirerek kapsamlı bir bilgi kaynağı sunmayı amaçlar.</p>
- </div>
-</section>
+<section class="container" id="sss"><div class="section-title"><small>MERAK EDİLENLER</small><h2>Rüya Hakkında Sık Sorulan Sorular</h2><p>Rüyalarla ilgili en çok sorulan soruların cevapları</p></div>
+<div class="faq" id="faqList">
+<details><summary>Her rüyanın bir anlamı var mıdır?</summary><p>Hayır. Bazı rüyalar günlük yaşantı, hafıza, duygu ve düşüncelerin yansıması olabilir. Her rüyaya özel bir mesaj yüklemek doğru değildir.</p></details>
+<details><summary>Rüyalar geleceği haber verir mi?</summary><p>İslam geleneğinde bazı salih rüyaların müjdeleyici olabileceği kabul edilir. Ancak her rüyanın geleceği haber verdiği söylenemez.</p></details>
+<details><summary>Rüyamızı kimlere anlatmalıyız?</summary><p>Güzel rüyalar, bizi seven ve iyiliğimizi isteyen güvenilir kişilerle paylaşılabilir. Kötü rüyaları anlatmamak hadislerde tavsiye edilmiştir.</p></details>
+<details><summary>Kötü rüya gördüğümüzde ne yapmalıyız?</summary><p>Allah'a sığınmak, sol tarafa üç defa hafifçe üflemek ve rüyayı başkalarına anlatmamak hadislerde bildirilen tavsiyelerdir.</p></details>
+<details><summary>Aynı rüyayı tekrar tekrar görmek ne anlama gelir?</summary><p>Tekrarlanan rüyalar kişinin zihnini meşgul eden konular, kaygılar veya duygularla ilişkili olabilir. Tek başına belirli bir anlama gelmez.</p></details>
+<details><summary>Sabah görülen rüyalar daha mı doğrudur?</summary><p>Sabah görülen her rüyanın daha doğru olduğuna ilişkin kesin bir dinî hüküm bulunmaz. Sabah saatlerinde REM dönemleri uzayabilir.</p></details>
+<details><summary>Rüyada ölmüş birini görmek ne demektir?</summary><p>Özlem, hatıra ve duygusal bağlarla ilişkili olabilir. Rüyadan kişinin ahiretteki durumu hakkında kesin hüküm çıkarılamaz.</p></details>
+<details><summary>Rüyada peygamber görmek mümkün müdür?</summary><p>Sahih hadislerde Hz. Muhammed'i rüyada görmekle ilgili müjdeler vardır. Bununla birlikte rüya, dinî hükümlerin kaynağı olamaz.</p></details>
+<details><summary>Rüyalar neden unutulur?</summary><p>Rüya anıları uyanıkken oluşan anılar gibi kalıcı kodlanmayabilir. Bu nedenle uyanınca kısa süre içinde unutulabilir.</p></details>
+<details><summary>Rüya tabiri kesin midir?</summary><p>Hayır. Rüya yorumu ihtimale dayalıdır. Aynı sembol farklı kişiler için farklı çağrışımlar taşıyabilir.</p></details>
+<details><summary>Rüyada ağlamak ne anlama gelir?</summary><p>Geleneksel tabirlerde ağlamak bazen ferahlık, bazen üzüntüyle ilişkilendirilir. Rüyanın nasıl geliştiği ve hissedilen duygu önemlidir.</p></details>
+<details><summary>Rüyada uçmak ne anlama gelir?</summary><p>Geleneksel yorumlarda özgürlük, yükselme, yolculuk veya değişim gibi anlamlarla ilişkilendirilebilir. Kesin bir anlamı yoktur.</p></details>
+<details><summary>Rüyada ev görmek ne demektir?</summary><p>Ev sembolü geleneksel yorumlarda aile, güven, kişinin özel hayatı ve yaşam düzeniyle ilişkilendirilir.</p></details>
+<details><summary>Rüyada yılan görmek ne anlama gelir?</summary><p>Geleneksel tabirlerde yılan bazen düşmanlık ve tehlikeyle ilişkilendirilir. Ancak her yılan rüyasını düşman olarak yorumlamak doğru değildir.</p></details>
+<details><summary>Rüyalarımıza göre karar vermeli miyiz?</summary><p>Önemli kararlar rüyaya dayanarak verilmemelidir. Akıl, bilgi, istişare ve gerçek hayat şartları dikkate alınmalıdır.</p></details>
+<details><summary>Rüyada su görmek ne anlama gelir?</summary><p>Su, geleneksel tabirlerde hayat, temizlik, ilim ve bereketle ilişkilendirilebilir. Suyun temiz, bulanık veya akıyor olması yorumu değiştirebilir.</p></details>
+<details><summary>Rüyada altın görmek ne anlama gelir?</summary><p>Altın bazı yorumlarda zenginlik, değer ve kazanç; bazı yorumlarda ise sıkıntı ve sorumlulukla ilişkilendirilir.</p></details>
+<details><summary>Rüyada bebek görmek ne anlama gelir?</summary><p>Geleneksel yorumlarda yeni başlangıçlar, sorumluluklar, sevinç ve umut gibi anlamlarla ilişkilendirilebilir.</p></details>
+<details><summary>Rüyada ekmek görmek ne demektir?</summary><p>Ekmek geleneksel tabirlerde rızık, emek, geçim ve bereket sembolü olarak değerlendirilir.</p></details>
+<details><summary>Rüyada balık görmek ne demektir?</summary><p>Balık, geleneksel yorumlarda kısmet, rızık, fırsat ve bollukla ilişkilendirilebilir. Balığın durumu ve rüyanın bütünü önemlidir.</p></details>
+<details><summary>Rüya tabirini kim yapmalıdır?</summary><p>Rüya yorumu konusunda bilgili, ölçülü, iyi niyetli ve dinî kaynakları doğru değerlendiren kişiler tercih edilmelidir.</p></details>
+<details><summary>Rüyada korkmak ne anlama gelir?</summary><p>Rüya sırasında korkmak bazen günlük kaygıların ve duygusal yoğunluğun yansıması olabilir. Tek başına kötü bir olayın habercisi değildir.</p></details>
+<details><summary>Rüyada para görmek ne anlama gelir?</summary><p>Geleneksel yorumlarda para; kazanç, ihtiyaç, sorumluluk, alışveriş veya anlaşmalarla ilişkilendirilir.</p></details>
+<details><summary>Rüyada yağmur görmek ne anlama gelir?</summary><p>Yağmur, geleneksel yorumlarda rahmet, bereket ve yenilenmeyle ilişkilendirilebilir. Yağmurun zarar verip vermediği önemlidir.</p></details>
+<details><summary>Rüyada diş dökülmesi ne anlama gelir?</summary><p>Bu rüya geleneksel tabirlerde farklı şekillerde yorumlanmıştır. Bilimsel açıdan rüya tek başına ölüm veya kayıp haberi değildir.</p></details>
+</div></section>
 
-<section class="container">
- <div class="section-title">
-  <small>KEŞFET</small>
-  <h2>Rüya Dünyasının Ana Başlıkları</h2>
-  <p>Merak ettiğiniz konuyu seçerek okumaya başlayın.</p>
- </div>
- <div class="grid">
-  <a href="#bilim" class="card"><div class="icon">🧠</div><h3>Rüya ve Bilim</h3><p>Uyku, beyin, REM dönemi, hafıza ve rüyaların psikolojik yönü.</p></a>
-  <a href="#islam" class="card"><div class="icon">☪</div><h3>İslam'da Rüya</h3><p>Kur'an, hadisler, salih rüya ve İslam âlimlerinin yaklaşımları.</p></a>
-  <a href="#tarih" class="card"><div class="icon">📜</div><h3>Tarihte Rüyalar</h3><p>Tarih boyunca anlatılan ve gerçekleştiği bildirilen önemli rüyalar.</p></a>
-  <a href="#alimler" class="card"><div class="icon">📚</div><h3>Büyük Rüya Yorumcuları</h3><p>İbn Sîrîn, Nablusî, Artemidoros ve diğer düşünürler.</p></a>
-  <a href="#semboller" class="card"><div class="icon">🔮</div><h3>Rüya Sembolleri</h3><p>Hayvanlar, yiyecekler, insanlar, eşyalar, renkler ve mekânlar.</p></a>
-  <a href="#sss" class="card"><div class="icon">❔</div><h3>Sık Sorulan Sorular</h3><p>Rüyalar hakkında en çok merak edilen sorular ve cevapları.</p></a>
- </div>
-</section>
+<section class="container"><div class="section-title"><small>DOĞRU BİLGİ VE SAĞDUYU</small><h2>Rüya Yorumlarken Nelere Dikkat Etmeliyiz?</h2></div>
+<div class="article"><p>Bir rüyayı değerlendirirken yalnızca tek bir sembole odaklanmak yerine rüyanın tamamını düşünmek gerekir. Rüyayı gören kişinin yaşantısı, ruh hâli, rüyadaki olaylar ve hissettiği duygular önemlidir.</p><p>Rüya tabirleri kesin hükümler değildir. Korkutucu yorumlarla insanları endişeye sürüklemek, rüyaları kullanarak maddi veya manevi çıkar sağlamak doğru değildir.</p><p>Rüya, merak edilebilecek ve üzerinde düşünülebilecek bir deneyimdir; fakat hayatımızı yönlendiren tek ölçü olmamalıdır.</p></div></section>
 
-<section class="dark-section" id="bilim">
- <div class="container">
-  <div class="section-title">
-   <small>BİLİMSEL YAKLAŞIM</small>
-   <h2>Rüyalar ve İnsan Beyni</h2>
-   <p>Uyurken zihnimizde neler oluyor?</p>
-  </div>
-  <div class="two-col">
-   <div class="info-box">
-    <h3>Niçin rüya görürüz?</h3>
-    <p>Rüya görmenin bütün nedenleri henüz kesin olarak açıklanmış değildir. Araştırmalar rüyaların hafıza, duyguların işlenmesi, öğrenme ve beyin faaliyetleriyle ilişkili olabileceğini göstermektedir.</p>
-   </div>
-   <div class="info-box">
-    <h3>Rüya kaç saniye sürer?</h3>
-    <p>Rüyalar birkaç saniyeyle sınırlı değildir. Birkaç dakika veya daha uzun süre devam edebilir. REM uykusu dönemleri ilerleyen sabah saatlerinde uzayabilir.</p>
-   </div>
-   <div class="info-box">
-    <h3>REM uykusu nedir?</h3>
-    <p>REM, hızlı göz hareketlerinin görüldüğü uyku dönemidir. Canlı ve hikâye biçimindeki rüyalar bu dönemde daha sık hatırlanır. Ancak rüyalar diğer uyku evrelerinde de görülebilir.</p>
-   </div>
-   <div class="info-box">
-    <h3>Herkes rüya görür mü?</h3>
-    <p>İnsanlar genel olarak rüya görür. Ancak herkes rüyalarını aynı sıklıkta hatırlamaz. Uyanma zamanı, uyku düzeni ve bireysel farklılıklar hatırlamayı etkileyebilir.</p>
-   </div>
-   <div class="info-box">
-    <h3>Neden rüyalarımızı unuturuz?</h3>
-    <p>Rüya sırasında oluşan anılar uyanık hayattaki anılar gibi her zaman kalıcı biçimde kodlanmaz. Uyandıktan kısa süre sonra rüya içeriği unutulabilir.</p>
-   </div>
-   <div class="info-box">
-    <h3>Rüyalar psikolojimizi yansıtır mı?</h3>
-    <p>Rüyalar bazen kişinin duygularından, endişelerinden ve günlük yaşantısından etkilenebilir. Ancak tek bir rüyadan psikolojik durum hakkında kesin teşhis çıkarılamaz.</p>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="container" id="islam">
- <div class="section-title">
-  <small>MANEVİ VE DİNÎ YAKLAŞIM</small>
-  <h2>İslam'da Rüya</h2>
-  <p>Kur'an-ı Kerim, hadisler ve İslam düşüncesinde rüya</p>
- </div>
- <div class="article">
-  <h3>İslam'da rüya nasıl değerlendirilir?</h3>
-  <p>İslam geleneğinde rüyalar genel olarak salih veya güzel rüyalar, kişinin kendi düşüncelerinden kaynaklanan rüyalar ve korkutucu rüyalar şeklinde ele alınır. Bu tasnif hadislerde bildirilen üçlü ayrımla ilişkilidir.</p>
-  <h3>Kur'an-ı Kerim'de rüya</h3>
-  <p>Yusuf Suresi, rüya konusunun en ayrıntılı anlatıldığı bölümlerden biridir. Hz. Yusuf'un çocukluk rüyası, zindandaki iki kişinin rüyası ve Mısır hükümdarının rüyası bu surede anlatılır.</p>
-  <p>Diğer önemli örnekler Sâffât Suresi 102. ayette Hz. İbrahim'in rüyası, Fetih Suresi 27. ayette ise Hz. Muhammed'in müjdeleyici rüyasıdır.</p>
-  <h3>Hadislerde rüya</h3>
-  <p>Sahih-i Buhârî ve Sahih-i Müslim'de güzel rüya, kötü rüya, rüyayı paylaşma ve kötü rüyadan Allah'a sığınma konularında hadisler bulunmaktadır.</p>
-  <h3>Güzel rüya gördüğümüzde ne yapmalıyız?</h3>
-  <p>Allah'a hamdetmek ve dilersek sevdiğimiz, güvendiğimiz kişilerle paylaşmak tavsiye edilir.</p>
-  <h3>Kötü rüya gördüğümüzde ne yapmalıyız?</h3>
-  <p>Allah'a sığınmak, sol tarafa üç defa hafifçe üflemek ve rüyayı başkalarına anlatmamak hadislerde bildirilen tavsiyeler arasındadır.</p>
-  <h3>Rüyalar dinî hüküm kaynağı mıdır?</h3>
-  <p>Hayır. Rüyalar dinî hüküm koyma, helal veya haram belirleme kaynağı değildir. Hayatla ilgili kararlar yalnızca rüyalara dayandırılmamalıdır.</p>
- </div>
-</section>
-
-<section class="container" id="tarih">
- <div class="section-title">
-  <small>GEÇMİŞTEN GÜNÜMÜZE</small>
-  <h2>Tarihte Görülen Önemli Rüyalar</h2>
-  <p>Dinî metinlerde ve tarihî anlatılarda yer alan rüyalar</p>
- </div>
- <div class="grid">
-  <div class="card"><div class="icon">⭐</div><h3>Hz. Yusuf'un Rüyası</h3><p>Güneş, ay ve on bir yıldızın kendisine secde ettiğini görmesi. Yusuf Suresi 4. ayet.</p></div>
-  <div class="card"><div class="icon">🐄</div><h3>Mısır Hükümdarının Rüyası</h3><p>Yedi semiz ve yedi zayıf inek ile yedi yeşil ve yedi kuru başak. Yusuf Suresi 43-49.</p></div>
-  <div class="card"><div class="icon">🐑</div><h3>Hz. İbrahim'in Rüyası</h3><p>Oğlunu kurban ettiğini görmesi ve teslimiyet kıssası. Sâffât Suresi 102. ayet.</p></div>
-  <div class="card"><div class="icon">🕋</div><h3>Hudeybiye ile İlgili Rüya</h3><p>Müslümanların Mescid-i Haram'a güven içinde girmeleriyle ilgili müjde. Fetih Suresi 27. ayet.</p></div>
-  <div class="card"><div class="icon">📖</div><h3>Zindandaki İki Kişinin Rüyası</h3><p>Hz. Yusuf'un hapishanede iki kişinin gördüğü rüyaları yorumlaması. Yusuf Suresi 36.</p></div>
-  <div class="card"><div class="icon">🌙</div><h3>Salih Rüyalar</h3><p>Hadislerde Hz. Muhammed'in gördüğü ve gerçekleştiği bildirilen müjdeleyici rüyalar.</p></div>
- </div>
-</section>
-
-<section class="container" id="alimler">
- <div class="section-title">
-  <small>RÜYA İLMİNİN ÖNEMLİ İSİMLERİ</small>
-  <h2>Büyük Rüya Yorumcuları ve Düşünürler</h2>
-  <p>Farklı çağlardan rüya araştırmacıları</p>
- </div>
- <div class="people">
-  <div class="person"><div class="portrait">📜</div><h3>İbn Sîrîn</h3><p>653-729. İslam dünyasında rüya tabiri geleneğinin en çok tanınan isimlerinden. Ona nispet edilen eserlerin aidiyeti konusunda ihtiyat gerekir.</p></div>
-  <div class="person"><div class="portrait">📚</div><h3>İmam Nablusî</h3><p>1641-1731. Ta'tîrü'l-Enâm adlı kapsamlı rüya tabiri eseriyle tanınır.</p></div>
-  <div class="person"><div class="portrait">🏛️</div><h3>Artemidoros</h3><p>MS 2. yüzyıl. Antik Yunan rüya yorumcusu. Oneirocritica adlı beş kitaplık eserin yazarıdır.</p></div>
-  <div class="person"><div class="portrait">🌿</div><h3>İbn Haldun</h3><p>1332-1406. Mukaddime'de insanın algısı, ruh ve rüya konularına yer verir.</p></div>
-  <div class="person"><div class="portrait">✨</div><h3>İbnü'l-Arabî</h3><p>1165-1240. Hayal âlemi, semboller ve manevi idrak konularındaki düşünceleriyle tanınır.</p></div>
-  <div class="person"><div class="portrait">🕌</div><h3>İmam Gazâlî</h3><p>1058-1111. Kalp, ruh, hayal ve manevi idrak üzerine önemli değerlendirmelerde bulunmuştur.</p></div>
- </div>
-</section>
-
-<section class="container" id="semboller">
- <div class="section-title">
-  <small>RÜYA TABİRLERİ</small>
-  <h2>A'dan Z'ye Rüya Sembolleri</h2>
-  <p>Merak ettiğiniz sembolü arayın ve geleneksel yorumlarını inceleyin.</p>
- </div>
- <div class="symbol-tools">
-  <input id="symbolSearch" placeholder="Örnek: Balık, ekmek, yılan, su..." oninput="filterSymbols()">
- </div>
- <div class="chips" id="categories">
-  <button class="active" onclick="setCategory('Tümü',this)">Tümü</button>
-  <button onclick="setCategory('Hayvanlar',this)">Hayvanlar</button>
-  <button onclick="setCategory('Yiyecekler',this)">Yiyecekler</button>
-  <button onclick="setCategory('Doğa',this)">Doğa</button>
-  <button onclick="setCategory('İnsanlar',this)">İnsanlar</button>
-  <button onclick="setCategory('Eşyalar',this)">Eşyalar</button>
-  <button onclick="setCategory('Diğer',this)">Diğer</button>
- </div>
- <div class="symbol-grid" id="symbolGrid"></div>
- <div class="symbol-detail" id="symbolDetail"></div>
- <p class="notice">Bilgilendirme: Buradaki sembol açıklamaları geleneksel rüya tabiri anlayışından örneklerdir. Kesin dinî bilgi veya geleceğe ilişkin garanti değildir. Rüyanın bütünü ve kişinin durumu önemlidir.</p>
-</section>
-
-<section class="container" id="sss">
- <div class="section-title">
-  <small>MERAK EDİLENLER</small>
-  <h2>Rüya Hakkında Sık Sorulan Sorular</h2>
-  <p>Rüyalarla ilgili en çok sorulan soruların cevapları</p>
- </div>
- <div class="faq" id="faqList">
-  <details><summary>1. Her rüyanın bir anlamı var mıdır?</summary><p>Hayır. Bazı rüyalar günlük yaşantı, hafıza, duygu ve düşüncelerin yansıması olabilir. Her rüyaya özel bir mesaj yüklemek doğru değildir.</p></details>
-  <details><summary>2. Rüyalar geleceği haber verir mi?</summary><p>İslam geleneğinde bazı salih rüyaların müjdeleyici olabileceği kabul edilir. Ancak her rüyanın geleceği haber verdiği söylenemez.</p></details>
-  <details><summary>3. Rüyamızı kimlere anlatmalıyız?</summary><p>Güzel rüyalar, bizi seven ve iyiliğimizi isteyen güvenilir kişilerle paylaşılabilir. Kötü rüyaları anlatmamak hadislerde tavsiye edilmiştir.</p></details>
-  <details><summary>4. Kötü rüya gördüğümüzde ne yapmalıyız?</summary><p>Allah'a sığınmak, sol tarafa üç defa hafifçe üflemek ve rüyayı başkalarına anlatmamak hadislerde bildirilen tavsiyelerdir.</p></details>
-  <details><summary>5. Aynı rüyayı tekrar tekrar görmek ne anlama gelir?</summary><p>Tekrarlanan rüyalar kişinin zihnini meşgul eden konular, kaygılar veya duygularla ilişkili olabilir. Tek başına belirli bir anlama gelmez.</p></details>
-  <details><summary>6. Sabah görülen rüyalar daha mı doğrudur?</summary><p>Sabah görülen her rüyanın daha doğru olduğuna ilişkin kesin bir dinî hüküm bulunmaz. Sabah saatlerinde REM dönemleri uzayabilir.</p></details>
-  <details><summary>7. Rüyada ölmüş birini görmek ne demektir?</summary><p>Özlem, hatıra ve duygusal bağlarla ilişkili olabilir. Geleneksel tabirlerde çeşitli yorumlar vardır; rüyadan kişinin ahiretteki durumu hakkında kesin hüküm çıkarılamaz.</p></details>
-  <details><summary>8. Rüyada peygamber görmek mümkün müdür?</summary><p>Sahih hadislerde Hz. Muhammed'i rüyada görmekle ilgili müjdeler vardır. Bununla birlikte rüya, dinî hükümlerin kaynağı olamaz.</p></details>
-  <details><summary>9. Rüyalar neden unutulur?</summary><p>Rüya anıları uyanıkken oluşan anılar gibi kalıcı kodlanmayabilir. Bu nedenle uyanınca kısa süre içinde unutulabilir.</p></details>
-  <details><summary>10. Rüya tabiri kesin midir?</summary><p>Hayır. Rüya yorumu ihtimale dayalıdır. Aynı sembol farklı kişiler için farklı çağrışımlar taşıyabilir.</p></details>
-  <details><summary>11. Rüyada ağlamak ne anlama gelir?</summary><p>Geleneksel tabirlerde ağlamak bazen ferahlık, bazen üzüntüyle ilişkilendirilir. Rüyanın nasıl geliştiği ve hissedilen duygu önemlidir.</p></details>
-  <details><summary>12. Rüyada uçmak ne anlama gelir?</summary><p>Geleneksel yorumlarda özgürlük, yükselme, yolculuk veya değişim gibi anlamlarla ilişkilendirilebilir. Kesin bir anlamı yoktur.</p></details>
-  <details><summary>13. Rüyada ev görmek ne demektir?</summary><p>Ev sembolü geleneksel yorumlarda aile, güven, kişinin özel hayatı ve yaşam düzeniyle ilişkilendirilir.</p></details>
-  <details><summary>14. Rüyada yılan görmek ne anlama gelir?</summary><p>Geleneksel tabirlerde yılan bazen düşmanlık ve tehlikeyle ilişkilendirilir. Ancak her yılan rüyasını düşman olarak yorumlamak doğru değildir.</p></details>
-  <details><summary>15. Rüyalarımıza göre karar vermeli miyiz?</summary><p>Önemli kararlar rüyaya dayanarak verilmemelidir. Akıl, bilgi, istişare ve gerçek hayat şartları dikkate alınmalıdır.</p></details>
-  <details><summary>16. Rüyada su görmek ne anlama gelir?</summary><p>Su, geleneksel tabirlerde hayat, temizlik, ilim ve bereketle ilişkilendirilebilir. Suyun temiz, bulanık veya akıyor olması yorumu değiştirebilir.</p></details>
-  <details><summary>17. Rüyada altın görmek ne anlama gelir?</summary><p>Altın bazı yorumlarda zenginlik, değer ve kazanç; bazı yorumlarda ise sıkıntı ve sorumlulukla ilişkilendirilir.</p></details>
-  <details><summary>18. Rüyada bebek görmek ne anlama gelir?</summary><p>Geleneksel yorumlarda yeni başlangıçlar, sorumluluklar, sevinç ve umut gibi anlamlarla ilişkilendirilebilir.</p></details>
-  <details><summary>19. Rüyada ekmek görmek ne demektir?</summary><p>Ekmek geleneksel tabirlerde rızık, emek, geçim ve bereket sembolü olarak değerlendirilir.</p></details>
-  <details><summary>20. Rüyada balık görmek ne demektir?</summary><p>Balık, geleneksel yorumlarda kısmet, rızık, fırsat ve bollukla ilişkilendirilebilir. Balığın durumu ve rüyanın bütünü önemlidir.</p></details>
-  <details><summary>21. Rüya tabirini kim yapmalıdır?</summary><p>Rüya yorumu konusunda bilgili, ölçülü, iyi niyetli ve dinî kaynakları doğru değerlendiren kişiler tercih edilmelidir.</p></details>
-  <details><summary>22. Rüyada korkmak ne anlama gelir?</summary><p>Rüya sırasında korkmak bazen günlük kaygıların ve duygusal yoğunluğun yansıması olabilir. Tek başına kötü bir olayın habercisi değildir.</p></details>
-  <details><summary>23. Rüyada para görmek ne anlama gelir?</summary><p>Geleneksel yorumlarda para; kazanç, ihtiyaç, sorumluluk, alışveriş veya anlaşmalarla ilişkilendirilir.</p></details>
-  <details><summary>24. Rüyada yağmur görmek ne anlama gelir?</summary><p>Yağmur, geleneksel yorumlarda rahmet, bereket ve yenilenmeyle ilişkilendirilebilir. Yağmurun zarar verip vermediği önemlidir.</p></details>
-  <details><summary>25. Rüyada diş dökülmesi ne anlama gelir?</summary><p>Bu rüya geleneksel tabirlerde farklı şekillerde yorumlanmıştır. Bilimsel açıdan ise rüya tek başına ölüm veya kayıp haberi değildir.</p></details>
- </div>
-</section>
-
-<section class="container">
- <div class="section-title">
-  <small>DOĞRU BİLGİ VE SAĞDUYU</small>
-  <h2>Rüya Yorumlarken Nelere Dikkat Etmeliyiz?</h2>
- </div>
- <div class="article">
-  <p>Bir rüyayı değerlendirirken yalnızca tek bir sembole odaklanmak yerine rüyanın tamamını düşünmek gerekir. Rüyayı gören kişinin yaşantısı, ruh hâli, rüyadaki olaylar ve hissettiği duygular önemlidir.</p>
-  <p>Rüya tabirleri kesin hükümler değildir. Korkutucu yorumlarla insanları endişeye sürüklemek, rüyaları kullanarak maddi veya manevi çıkar sağlamak doğru değildir.</p>
-  <p>Rüya, merak edilebilecek ve üzerinde düşünülebilecek bir deneyimdir; fakat hayatımızı yönlendiren tek ölçü olmamalıdır.</p>
- </div>
-</section>
-
-<footer>
- <strong>☾ Rüya Ansiklopedisi</strong>
- <p>Rüyaların anlamlarını keşfedin, geçmişin bilgeliğiyle tanışın.</p>
- <p>Bilim • Tarih • İslam • Tasavvuf • Rüya Sembolleri</p>
- <p>© 2026 Rüya Ansiklopedisi. Bilgilendirme amacıyla hazırlanmıştır.</p>
-</footer>
+<footer><strong>☾ Rüya Ansiklopedisi</strong><p>Rüyaların anlamlarını keşfedin, geçmişin bilgeliğiyle tanışın.</p><p>Bilim • Tarih • İslam • Tasavvuf • Rüya Sembolleri</p><p><a href="https://mbofis01.github.io/ruya/" target="_blank" rel="noopener">Bünyamin Hoca</a> · © 2026 Rüya Ansiklopedisi</p><p>Bilgilendirme amacıyla hazırlanmıştır. Rüya yorumları tıbbi veya psikolojik tavsiye yerine geçmez.</p></footer>
 
 <script>
 const symbols = [
@@ -419,74 +236,19 @@ const symbols = [
 ["Okul","Diğer","Öğrenme, sınav, gelişim ve sorumlulukları çağrıştırabilir."],
 ["Cami","Diğer","Maneviyat, ibadet, huzur ve toplulukla ilişkilendirilebilir."]
 ];
-
 let selectedCategory="Tümü";
 function renderSymbols(){
  const q=document.getElementById("symbolSearch").value.toLocaleLowerCase("tr");
- const grid=document.getElementById("symbolGrid");
- const filtered=symbols.filter(s=>
-  (selectedCategory==="Tümü"||s[1]===selectedCategory)&&
-  (s[0].toLocaleLowerCase("tr").includes(q)||s[2].toLocaleLowerCase("tr").includes(q))
- );
- grid.innerHTML="";
- filtered.forEach(s=>{
-  const el=document.createElement("div");
-  el.className="symbol";
-  const strong=document.createElement("strong");
-  strong.textContent=s[0];
-  const span=document.createElement("span");
-  span.textContent=s[1]+" • İncele";
-  el.append(strong,span);
-  el.onclick=()=>showSymbol(s);
-  grid.appendChild(el);
- });
- if(!filtered.length) grid.textContent="Aradığınız sembol bulunamadı.";
+ const grid=document.getElementById("symbolGrid");grid.innerHTML="";
+ const filtered=symbols.filter(s=>(selectedCategory==="Tümü"||s[1]===selectedCategory)&&(s[0].toLocaleLowerCase("tr").includes(q)||s[2].toLocaleLowerCase("tr").includes(q)));
+ filtered.forEach(s=>{const el=document.createElement("div");el.className="symbol";const strong=document.createElement("strong");strong.textContent=s[0];const span=document.createElement("span");span.textContent=s[1]+" • İncele";el.append(strong,span);el.onclick=()=>showSymbol(s);grid.appendChild(el)});
+ if(!filtered.length)grid.textContent="Aradığınız sembol bulunamadı.";
 }
-function showSymbol(s){
- const d=document.getElementById("symbolDetail");
- d.style.display="block";
- d.innerHTML="";
- const title=document.createElement("h3");
- title.textContent="Rüyada "+s[0]+" görmek";
- const category=document.createElement("p");
- category.textContent="Kategori: "+s[1];
- const description=document.createElement("p");
- description.textContent=s[2];
- const note=document.createElement("small");
- note.textContent="Bu açıklama geleneksel ve genel bir yorumdur. Kesin anlam taşımaz.";
- d.append(title,category,description,note);
- d.scrollIntoView({behavior:"smooth",block:"nearest"});
-}
-function setCategory(c,btn){
- selectedCategory=c;
- document.querySelectorAll("#categories button").forEach(b=>b.classList.remove("active"));
- btn.classList.add("active");
- renderSymbols();
-}
-function filterSymbols(){renderSymbols();}
-function searchSite(){
- const q=document.getElementById("mainSearch").value.trim().toLocaleLowerCase("tr");
- if(!q)return;
- document.getElementById("symbolSearch").value=q;
- selectedCategory="Tümü";
- document.querySelectorAll("#categories button").forEach(b=>b.classList.remove("active"));
- document.querySelector("#categories button").classList.add("active");
- renderSymbols();
- document.getElementById("semboller").scrollIntoView({behavior:"smooth"});
- const match=symbols.find(s=>s[0].toLocaleLowerCase("tr").includes(q));
- if(match)showSymbol(match);
- else{
-  const faq=[...document.querySelectorAll("#faqList details")];
-  const found=faq.find(d=>d.textContent.toLocaleLowerCase("tr").includes(q));
-  if(found){
-   document.getElementById("sss").scrollIntoView({behavior:"smooth"});
-   found.open=true;
-  }
- }
-}
-document.getElementById("mainSearch").addEventListener("keydown",e=>{
- if(e.key==="Enter")searchSite();
-});
+function showSymbol(s){const d=document.getElementById("symbolDetail");d.style.display="block";d.innerHTML="";const h=document.createElement("h3");h.textContent="Rüyada "+s[0]+" görmek";const c=document.createElement("p");c.textContent="Kategori: "+s[1];const p=document.createElement("p");p.textContent=s[2];const n=document.createElement("small");n.textContent="Bu açıklama geleneksel ve genel bir yorumdur. Kesin anlam taşımaz.";d.append(h,c,p,n);d.scrollIntoView({behavior:"smooth",block:"nearest"})}
+function setCategory(c,btn){selectedCategory=c;document.querySelectorAll("#categories button").forEach(b=>b.classList.remove("active"));btn.classList.add("active");renderSymbols()}
+function filterSymbols(){renderSymbols()}
+function searchSite(){const q=document.getElementById("mainSearch").value.trim().toLocaleLowerCase("tr");if(!q)return;document.getElementById("symbolSearch").value=q;selectedCategory="Tümü";document.querySelectorAll("#categories button").forEach(b=>b.classList.remove("active"));document.querySelector("#categories button").classList.add("active");renderSymbols();const match=symbols.find(s=>s[0].toLocaleLowerCase("tr").includes(q));if(match){document.getElementById("semboller").scrollIntoView({behavior:"smooth"});showSymbol(match)}else{const faq=[...document.querySelectorAll("#faqList details")].find(d=>d.textContent.toLocaleLowerCase("tr").includes(q));if(faq){document.getElementById("sss").scrollIntoView({behavior:"smooth"});faq.open=true}else document.getElementById("semboller").scrollIntoView({behavior:"smooth"})}}
+document.getElementById("mainSearch").addEventListener("keydown",e=>{if(e.key==="Enter")searchSite()});
 renderSymbols();
 </script>
 </body>
