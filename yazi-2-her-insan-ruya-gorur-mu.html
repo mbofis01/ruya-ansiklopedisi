@@ -25,11 +25,11 @@ nav a:hover{color:#e5c48c}
 .art-hero small{color:#e8d9bb;letter-spacing:3px;font:12px Arial,sans-serif}
 .art-hero h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:12px 0 10px;color:#f1d5a1}
 .art-hero p{color:#c6d0da;margin:0;font-size:17px}
-.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px 1fr;gap:50px;align-items:start}
+.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:50px;align-items:start}
 .toc{position:sticky;top:130px;font:13px/1.5 Arial,sans-serif;border-left:2px solid var(--gold);padding-left:16px}
 .toc strong{color:var(--navy);display:block;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;font-size:12px}
 .toc ol{margin:0;padding-left:18px}.toc li{margin:6px 0;color:var(--muted)}.toc a:hover{color:var(--gold)}
-.art{max-width:760px;font-size:17px}
+.art{max-width:760px;font-size:17px;min-width:0}
 .art h2{color:var(--navy);font-size:27px;line-height:1.3;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 .art h2:first-child{margin-top:0}
 .art h3{color:var(--navy);font-size:21px;margin:32px 0 8px}
@@ -59,8 +59,10 @@ td.ar{font-family:"Traditional Arabic","Amiri","Noto Naskh Arabic",serif;font-si
 .pn span{color:var(--navy);font-weight:bold}.pn.next{text-align:right}
 footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
 footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
-@media(max-width:900px){.art-wrap{grid-template-columns:1fr;gap:24px}.toc{position:static}}
+@media(max-width:900px){.art-wrap{grid-template-columns:minmax(0,1fr);gap:24px}.toc{position:static}}
 @media(max-width:520px){.nav{gap:10px 16px}.nav a{font-size:12px}.art{font-size:16px}.art h2{font-size:23px}.prevnext{grid-template-columns:1fr}.art .ar{font-size:22px}}
+@media(max-width:640px){header{padding:8px 4%}.brand-row{gap:6px;padding-bottom:6px;flex-wrap:nowrap}.hoca-link{font-size:14px;gap:6px;padding:3px 6px;letter-spacing:0;white-space:nowrap}.tree-icon,.ruya-logo{width:26px;height:26px}.nav{gap:4px 14px;padding-top:6px}nav a{font-size:12px}html{scroll-padding-top:110px}}
+.art .ref,.art .ref-link,.art .src-link,.art .ref-note{overflow-wrap:anywhere}
 
 </style>
 </head>
@@ -78,11 +80,11 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <main class="art-wrap">
 <aside class="toc"><strong>Bu yazıda</strong><ol><li><a href="#b1">1. Bazı İnsanlar Neden Hiç Rüya Görmediklerini Söyler?</a></li><li><a href="#b2">2. İnsan Bir Gecede Kaç Rüya Görür?</a></li><li><a href="#b3">3. Hiç Rüya Görmeyen İnsanlar Var mıdır?</a></li><li><a href="#b4">4. Görme Engelli İnsanlar Rüya Görür mü?</a></li><li><a href="#b5">5. Bebekler de Rüya Görür mü?</a></li><li><a href="#b6">6. İslam&#x27;a Göre Her İnsan Rüya Görür mü?</a></li><li><a href="#b7">7. Rüyalarını Hatırlamak Mümkün müdür?</a></li><li><a href="#b8">Sonuç</a></li><li><a href="#b9">Dipnotlar ve kaynakça</a></li></ol></aside>
 <article class="art">
-<p><strong>Evet, </strong><strong>bilimsel</strong><strong>araştırmalara</strong><strong>göre</strong><strong>sağlıklı</strong><strong>uyku</strong><strong>düzenine</strong><strong>sahip</strong><strong>insanların</strong><strong>hemen</strong><strong>hemen</strong><strong>tamamı</strong><strong>rüya</strong><strong>görür</strong><strong>.</strong> Ancak herkes gördüğü rüyaları hatırlamaz. Bu nedenle bazı insanlar hiç rüya görmediklerini düşünürler. Oysa rüya görmek ile görülen rüyayı hatırlamak birbirinden farklı iki durumdur.<sup class="fn"><a href="#fn-1">[1]</a></sup></p>
+<p><strong>Evet, bilimsel araştırmalara göre sağlıklı uyku düzenine sahip insanların hemen hemen tamamı rüya görür.</strong> Ancak herkes gördüğü rüyaları hatırlamaz. Bu nedenle bazı insanlar hiç rüya görmediklerini düşünürler. Oysa rüya görmek ile görülen rüyayı hatırlamak birbirinden farklı iki durumdur.<sup class="fn"><a href="#fn-1">[1]</a></sup></p>
 <p>İnsan, gece boyunca birden fazla uyku döngüsünden geçer. Bu döngüler içerisinde REM (Hızlı Göz Hareketleri) ve NREM (REM dışı uyku) evreleri bulunur. Rüyalar özellikle REM uykusunda daha canlı, hareketli ve duygusal olabilir. Bununla birlikte NREM uykusunda da rüya deneyimleri yaşanabilir.<sup class="fn"><a href="#fn-2">[2]</a></sup></p>
 <h2 id="b1">1. Bazı İnsanlar Neden Hiç Rüya Görmediklerini Söyler?</h2>
 <p>Bazı insanlar her sabah gördükleri rüyaları ayrıntılarıyla anlatabilirken bazıları aylarca, hatta yıllarca rüya görmediklerini ifade eder.</p>
-<p>Bu farklılığın başlıca sebeplerinden biri, <strong>rüyaların</strong><strong>hafızada</strong><strong>kalma</strong><strong>süresidir</strong><strong>.</strong></p>
+<p>Bu farklılığın başlıca sebeplerinden biri, <strong>rüyaların hafızada kalma süresidir.</strong></p>
 <p>Rüyalar çoğu zaman uyandıktan kısa süre sonra unutulur. Özellikle kişi rüyadan hemen sonra uyanmamışsa veya uyandığında dikkatini başka şeylere yöneltmişse rüyayı hatırlaması zorlaşabilir.</p>
 <p>Araştırmalar, gece boyunca uyanma sıklığının ve uyanma anındaki beyin faaliyetlerinin rüyaların hatırlanmasında etkili olabileceğini göstermektedir.<sup class="fn"><a href="#fn-3">[3]</a></sup></p>
 <p>Dolayısıyla bir insanın sabah uyandığında hiçbir rüya hatırlamaması, o gece kesinlikle rüya görmediği anlamına gelmez.</p>
@@ -107,7 +109,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <h2 id="b5">5. Bebekler de Rüya Görür mü?</h2>
 <p>Bebekler, özellikle yeni doğdukları dönemde, yetişkinlerden farklı bir uyku düzenine sahiptir.</p>
 <p>Yeni doğan bebeklerin uykusunda REM uykusuna benzer aktif uyku önemli bir yer tutar.</p>
-<p>Ancak <strong>bebeklerin</strong><strong>yetişkinler</strong><strong>gibi</strong><strong>hikâyesi</strong><strong>, </strong><strong>kişileri</strong><strong>ve</strong><strong>olayları</strong><strong>bulunan</strong><strong>rüyalar</strong><strong>görüp</strong><strong>görmediği</strong><strong>kesin</strong><strong>olarak</strong><strong>bilinmemektedir</strong><strong>.</strong></p>
+<p>Ancak <strong>bebeklerin yetişkinler gibi hikâyesi, kişileri ve olayları bulunan rüyalar görüp görmediği kesin olarak bilinmemektedir.</strong></p>
 <p>Çünkü bebekler yaşadıkları uyku deneyimlerini sözlü olarak anlatamazlar.</p>
 <p>Bu nedenle bebeklerin aktif uyku sırasında gülümsemeleri, yüz ifadelerinin değişmesi veya hareket etmeleri, mutlaka belirli bir rüya gördüklerinin kanıtı sayılamaz.<sup class="fn"><a href="#fn-6">[6]</a></sup></p>
 <h2 id="b6">6. İslam&#x27;a Göre Her İnsan Rüya Görür mü?</h2>
@@ -131,7 +133,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p>Rüya görmek, insanlarda oldukça yaygın olan doğal bir uyku deneyimidir. Sağlıklı insanların büyük çoğunluğu rüya görür. Ancak görülen rüyaların önemli bir bölümü hatırlanmaz.</p>
 <p>Bu nedenle hiç rüya görmediğini söyleyen bir insan, gerçekte rüya görüyor fakat bunları hatırlamıyor olabilir.</p>
 <p>Bununla birlikte bazı nörolojik durumlarda rüya deneyiminin gerçekten kaybolabildiği de bilinmektedir.</p>
-<p class="callout"><strong>Sonuç</strong><strong>olarak</strong><strong>, </strong><strong>rüya</strong><strong>görmek</strong><strong>ile</strong><strong>rüyayı</strong><strong>hatırlamak</strong><strong>aynı</strong><strong>şey</strong><strong>değildir</strong><strong>. </strong><strong>İnsan</strong><strong>bir</strong><strong>gece</strong><strong>boyunca</strong><strong>rüyalar</strong><strong>görmüş</strong><strong>olsa</strong><strong> bile </strong><strong>sabah</strong><strong>uyandığında</strong><strong>bunların</strong><strong>hiçbirini</strong><strong>hatırlamayabilir</strong><strong>.</strong></p>
+<p class="callout"><strong>Sonuç olarak, rüya görmek ile rüyayı hatırlamak aynı şey değildir. İnsan bir gece boyunca rüyalar görmüş olsa bile sabah uyandığında bunların hiçbirini hatırlamayabilir.</strong></p>
 <h2 id="b9">Dipnotlar ve kaynakça</h2>
 <h3 id="b10">A. Bilimsel kaynaklar</h3>
 <p class="ref" id="fn-1"><span class="ref-n">[1]</span> Siclari, Francesca ve diğerleri (2017). “The Neural Correlates of Dreaming.” Nature Neuroscience, 20, s. 872–878. DOI: 10.1038/nn.4545. REM ve NREM uykusunda rüya deneyiminin sinirsel temellerini inceleyen araştırma.</p>
@@ -148,7 +150,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <h3 id="b11">B. Kur&#x27;an-ı Kerim ve hadis kaynakları</h3>
 <p class="ref" id="fn-7"><span class="ref-n">[7]</span> Müslim b. el-Haccâc (ö. 261/875). el-Câmiʿu&#x27;s-Sahîh, Kitâbü&#x27;r-Rü&#x27;yâ, hadis no. 2263a. Rüyaların üç çeşidine ilişkin rivayet.</p>
 <p class="ref-link">↗ <a href="https://sunnah.com/muslim:2263a" target="_blank" rel="noopener">Sahih Müslim 2263a – Arapça ve İngilizce</a></p>
-<p class="ref-note"><strong>Kur&#x27;an</strong><strong>kaynağı</strong><strong>:</strong> Yusuf Suresi, 12/4.</p>
+<p class="ref-note"><strong>Kur&#x27;an kaynağı:</strong> Yusuf Suresi, 12/4.</p>
 <p class="ref-link">↗ <a href="https://kuran.diyanet.gov.tr/" target="_blank" rel="noopener">Diyanet İşleri Başkanlığı – Kur&#x27;an-ı Kerim Meali</a></p>
 </article>
 </main>

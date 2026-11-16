@@ -25,11 +25,11 @@ nav a:hover{color:#e5c48c}
 .art-hero small{color:#e8d9bb;letter-spacing:3px;font:12px Arial,sans-serif}
 .art-hero h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:12px 0 10px;color:#f1d5a1}
 .art-hero p{color:#c6d0da;margin:0;font-size:17px}
-.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px 1fr;gap:50px;align-items:start}
+.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:50px;align-items:start}
 .toc{position:sticky;top:130px;font:13px/1.5 Arial,sans-serif;border-left:2px solid var(--gold);padding-left:16px}
 .toc strong{color:var(--navy);display:block;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;font-size:12px}
 .toc ol{margin:0;padding-left:18px}.toc li{margin:6px 0;color:var(--muted)}.toc a:hover{color:var(--gold)}
-.art{max-width:760px;font-size:17px}
+.art{max-width:760px;font-size:17px;min-width:0}
 .art h2{color:var(--navy);font-size:27px;line-height:1.3;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 .art h2:first-child{margin-top:0}
 .art h3{color:var(--navy);font-size:21px;margin:32px 0 8px}
@@ -59,8 +59,10 @@ td.ar{font-family:"Traditional Arabic","Amiri","Noto Naskh Arabic",serif;font-si
 .pn span{color:var(--navy);font-weight:bold}.pn.next{text-align:right}
 footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
 footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
-@media(max-width:900px){.art-wrap{grid-template-columns:1fr;gap:24px}.toc{position:static}}
+@media(max-width:900px){.art-wrap{grid-template-columns:minmax(0,1fr);gap:24px}.toc{position:static}}
 @media(max-width:520px){.nav{gap:10px 16px}.nav a{font-size:12px}.art{font-size:16px}.art h2{font-size:23px}.prevnext{grid-template-columns:1fr}.art .ar{font-size:22px}}
+@media(max-width:640px){header{padding:8px 4%}.brand-row{gap:6px;padding-bottom:6px;flex-wrap:nowrap}.hoca-link{font-size:14px;gap:6px;padding:3px 6px;letter-spacing:0;white-space:nowrap}.tree-icon,.ruya-logo{width:26px;height:26px}.nav{gap:4px 14px;padding-top:6px}nav a{font-size:12px}html{scroll-padding-top:110px}}
+.art .ref,.art .ref-link,.art .src-link,.art .ref-note{overflow-wrap:anywhere}
 
 </style>
 </head>
@@ -78,7 +80,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <main class="art-wrap">
 <aside class="toc"><strong>Bu yazıda</strong><ol><li><a href="#b1">1. Kur&#x27;an-ı Kerim&#x27;de Sadık Rüya</a></li><li><a href="#b2">2. Hadislerde Sadık Rüya</a></li><li><a href="#b3">3. Sadık Rüya ile Salih Rüya Aynı Şey midir?</a></li><li><a href="#b4">4. Sadık Rüya Nasıl Anlaşılır?</a></li><li><a href="#b5">5. İslam Âlimlerine Göre Sadık Rüya</a></li><li><a href="#b6">6. Sadık Rüyalar Geleceği Haber Verebilir mi?</a></li><li><a href="#b7">Sonuç</a></li><li><a href="#b8">Dipnotlar ve kaynakça</a></li></ol></aside>
 <article class="art">
-<p><strong>Sadık</strong><strong>rüya</strong><strong> (</strong><strong>الرؤيا</strong><strong>الصادقة</strong><strong>)</strong>, İslamî literatürde doğru ve hakikate uygun rüya anlamına gelir. Bazı sadık rüyalar, gelecekte gerçekleşecek bir olaya işaret edebilir; bazıları ise bir hakikati sembolik biçimde ifade edebilir.</p>
+<p><strong>Sadık rüya (الرؤيا الصادقة)</strong>, İslamî literatürde doğru ve hakikate uygun rüya anlamına gelir. Bazı sadık rüyalar, gelecekte gerçekleşecek bir olaya işaret edebilir; bazıları ise bir hakikati sembolik biçimde ifade edebilir.</p>
 <p>İslam düşüncesinde sadık rüyalar, sıradan günlük düşüncelerden kaynaklanan rüyalardan farklı değerlendirilir. Ancak bir rüyanın çok canlı, etkileyici veya unutulmaz olması, onun mutlaka sadık rüya olduğunu göstermez.</p>
 <h2 id="b1">1. Kur&#x27;an-ı Kerim&#x27;de Sadık Rüya</h2>
 <p>Kur&#x27;an&#x27;da sadık rüyanın en dikkat çekici örneklerinden biri Hz. Yusuf&#x27;un çocukluğunda gördüğü rüyadır.</p>
@@ -96,7 +98,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p class="ar" dir="rtl" lang="ar">الرُّؤْيَا الصَّالِحَةُ جُزْءٌ مِنْ سِتَّةٍ وَأَرْبَعِينَ جُزْءًا مِنَ النُّبُوَّةِ</p>
 <blockquote>&quot;Salih rüya, peygamberliğin kırk altı cüzünden biridir.&quot;<sup class="fn"><a href="#fn-2">[2]</a></sup></blockquote>
 <p>Bu hadis, İslam âlimleri tarafından sadık ve salih rüyaların peygamberlikle ilişkili bir doğruluk ve müjde yönü bulunduğu şeklinde açıklanmıştır.</p>
-<p>Ancak burada önemli bir husus vardır: <strong>Bir </strong><strong>insanın</strong><strong>sadık</strong><strong>rüya</strong><strong>görmesi</strong><strong>, </strong><strong>onun</strong><strong>peygamber</strong><strong>olduğu</strong><strong>, </strong><strong>vahiy</strong><strong>aldığı</strong><strong>veya</strong><strong>dinî</strong><strong>hüküm</strong><strong>koyabileceği</strong><strong>anlamına</strong><strong>gelmez</strong><strong>.</strong></p>
+<p>Ancak burada önemli bir husus vardır: <strong>Bir insanın sadık rüya görmesi, onun peygamber olduğu, vahiy aldığı veya dinî hüküm koyabileceği anlamına gelmez.</strong></p>
 <p>Nübüvvet Hz. Muhammed ile sona ermiştir. Rüyalar, Kur&#x27;an ve sünnetin yerine geçebilecek bağımsız bir dinî delil değildir.</p>
 <h2 id="b3">3. Sadık Rüya ile Salih Rüya Aynı Şey midir?</h2>
 <p>Bu iki kavram birbirine yakın olmakla birlikte anlam bakımından farklı yönleri vardır.</p>
@@ -133,7 +135,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <h2 id="b7">Sonuç</h2>
 <p>Sadık rüya, İslamî kaynaklarda doğruluk ve hakikatle ilişkili bir rüya türüdür. Kur&#x27;an&#x27;da peygamberlerin gördüğü ve gerçekleşen rüyalar, bu konunun temel örneklerini oluşturmaktadır.</p>
 <p>Hadislerde salih rüyaların peygamberliğin kırk altı cüzünden biri olduğu ifade edilmiştir. İslam âlimleri ise bu rüyaları ruh, hayal, idrak ve manevi bilgi açısından değerlendirmişlerdir.</p>
-<p class="callout"><strong>Bununla</strong><strong>birlikte</strong><strong> her </strong><strong>güzel</strong><strong>rüya</strong><strong>sadık</strong><strong>rüya</strong><strong>olmadığı</strong><strong>gibi</strong><strong>, her </strong><strong>sadık</strong><strong>rüyanın</strong><strong> da </strong><strong>mutlaka</strong><strong>geleceğe</strong><strong>ilişkin</strong><strong>bir</strong><strong>haber</strong><strong>taşıması</strong><strong>gerekmez</strong><strong>.</strong></p>
+<p class="callout"><strong>Bununla birlikte her güzel rüya sadık rüya olmadığı gibi, her sadık rüyanın da mutlaka geleceğe ilişkin bir haber taşıması gerekmez.</strong></p>
 <p>Rüyanın doğruluğu konusunda ihtiyatlı davranmak, sembolleri kesin hükümlerle yorumlamamak ve rüyaları dinî hükümlerin kaynağı hâline getirmemek esastır.</p>
 <h2 id="b8">Dipnotlar ve kaynakça</h2>
 <p class="ref" id="fn-1"><span class="ref-n">[1]</span> Kur&#x27;an-ı Kerim, Yusuf Suresi, 12/4 ve 12/100. Hz. Yusuf&#x27;un rüyası ve gerçekleşmesi.</p>

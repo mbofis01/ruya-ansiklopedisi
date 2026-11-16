@@ -25,11 +25,11 @@ nav a:hover{color:#e5c48c}
 .art-hero small{color:#e8d9bb;letter-spacing:3px;font:12px Arial,sans-serif}
 .art-hero h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:12px 0 10px;color:#f1d5a1}
 .art-hero p{color:#c6d0da;margin:0;font-size:17px}
-.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px 1fr;gap:50px;align-items:start}
+.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:50px;align-items:start}
 .toc{position:sticky;top:130px;font:13px/1.5 Arial,sans-serif;border-left:2px solid var(--gold);padding-left:16px}
 .toc strong{color:var(--navy);display:block;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;font-size:12px}
 .toc ol{margin:0;padding-left:18px}.toc li{margin:6px 0;color:var(--muted)}.toc a:hover{color:var(--gold)}
-.art{max-width:760px;font-size:17px}
+.art{max-width:760px;font-size:17px;min-width:0}
 .art h2{color:var(--navy);font-size:27px;line-height:1.3;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 .art h2:first-child{margin-top:0}
 .art h3{color:var(--navy);font-size:21px;margin:32px 0 8px}
@@ -59,8 +59,10 @@ td.ar{font-family:"Traditional Arabic","Amiri","Noto Naskh Arabic",serif;font-si
 .pn span{color:var(--navy);font-weight:bold}.pn.next{text-align:right}
 footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
 footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
-@media(max-width:900px){.art-wrap{grid-template-columns:1fr;gap:24px}.toc{position:static}}
+@media(max-width:900px){.art-wrap{grid-template-columns:minmax(0,1fr);gap:24px}.toc{position:static}}
 @media(max-width:520px){.nav{gap:10px 16px}.nav a{font-size:12px}.art{font-size:16px}.art h2{font-size:23px}.prevnext{grid-template-columns:1fr}.art .ar{font-size:22px}}
+@media(max-width:640px){header{padding:8px 4%}.brand-row{gap:6px;padding-bottom:6px;flex-wrap:nowrap}.hoca-link{font-size:14px;gap:6px;padding:3px 6px;letter-spacing:0;white-space:nowrap}.tree-icon,.ruya-logo{width:26px;height:26px}.nav{gap:4px 14px;padding-top:6px}nav a{font-size:12px}html{scroll-padding-top:110px}}
+.art .ref,.art .ref-link,.art .src-link,.art .ref-note{overflow-wrap:anywhere}
 
 </style>
 </head>
@@ -80,13 +82,13 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <article class="art">
 <p>İnsan, bazen gördüğü bir rüyayı yıllar geçmesine rağmen bütün ayrıntılarıyla hatırlarken, bazen de uyandıktan birkaç dakika sonra gördüğü rüyayı tamamen unutabilir. Hatta kimi zaman rüya gördüğümüzü bilir, fakat rüyada neler yaşadığımızı bir türlü hatırlayamayız.</p>
 <p>Peki, bunun sebebi nedir? Neden bazı rüyalar hafızamızda derin izler bırakırken bazıları hiçbir iz bırakmadan kaybolur?</p>
-<p><strong>Bilimsel</strong><strong>araştırmalara</strong><strong>göre</strong><strong>bunun</strong><strong>temel</strong><strong>sebeplerinden</strong><strong>biri</strong><strong>, </strong><strong>rüya</strong><strong>sırasında</strong><strong>yaşanan</strong><strong>deneyimlerin</strong><strong>hafızaya</strong><strong>kaydedilmesi</strong><strong>ve</strong><strong>uyandıktan</strong><strong>sonra</strong><strong>yeniden</strong><strong>hatırlanmasıyla</strong><strong>ilgili</strong><strong>süreçlerdir</strong><strong>.</strong> Rüyanın hangi uyku evresinde görüldüğü, kişinin ne zaman uyandığı, rüyanın duygusal yoğunluğu ve bireysel hafıza farklılıkları, rüyaların hatırlanmasında rol oynayabilir.<sup class="fn"><a href="#fn-1">[1]</a></sup></p>
+<p><strong>Bilimsel araştırmalara göre bunun temel sebeplerinden biri, rüya sırasında yaşanan deneyimlerin hafızaya kaydedilmesi ve uyandıktan sonra yeniden hatırlanmasıyla ilgili süreçlerdir.</strong> Rüyanın hangi uyku evresinde görüldüğü, kişinin ne zaman uyandığı, rüyanın duygusal yoğunluğu ve bireysel hafıza farklılıkları, rüyaların hatırlanmasında rol oynayabilir.<sup class="fn"><a href="#fn-1">[1]</a></sup></p>
 <h2 id="b1">1. Rüyalar Neden Çabuk Unutulur?</h2>
 <p>Uyanık olduğumuzda yaşadığımız olayların bir kısmı hafızamızda kalıcı hâle gelir. Ancak uyku sırasında beynin hafıza ve dikkatle ilişkili faaliyetleri, uyanıklık döneminden farklı bir düzen içerisinde çalışır.</p>
 <p>Özellikle REM uykusunda beynin bazı bölgeleri oldukça aktifken, planlama ve bilinçli değerlendirmeyle ilişkili bazı bölgelerin faaliyetleri farklılaşır.</p>
 <p>Bu durumun, rüya deneyimlerinin hafızaya kaydedilmesini ve sonradan hatırlanmasını etkileyebileceği düşünülmektedir.<sup class="fn"><a href="#fn-1">[1]</a></sup></p>
 <p>Bir insan çok canlı bir rüya gördükten sonra uyandığında, rüyasını başlangıçta hatırlayabilir. Ancak günlük hayatına yöneldiğinde rüyaya ilişkin ayrıntılar hızla kaybolabilir.</p>
-<p>Dolayısıyla <strong>rüyanın</strong><strong>unutulması</strong><strong>, </strong><strong>mutlaka</strong><strong>rüyanın</strong><strong>önemsiz</strong><strong>veya</strong><strong>anlamsız</strong><strong>olduğu</strong><strong>anlamına</strong><strong>gelmez</strong><strong>.</strong> Bu durum, hafızanın çalışma biçimiyle ilişkili olabilir.</p>
+<p>Dolayısıyla <strong>rüyanın unutulması, mutlaka rüyanın önemsiz veya anlamsız olduğu anlamına gelmez.</strong> Bu durum, hafızanın çalışma biçimiyle ilişkili olabilir.</p>
 <h2 id="b2">2. Uyanma Zamanı Rüyaları Hatırlamayı Etkiler mi?</h2>
 <p>Evet. Rüyaların hatırlanmasında uyanma zamanı önemli bir etkendir.</p>
 <p>Araştırmalar, insanların REM uykusundan uyandırıldıklarında sıklıkla rüya deneyimi bildirdiklerini göstermektedir. Bununla birlikte NREM uykusundan uyandırılan kişiler de rüya gördüklerini anlatabilmektedir.<sup class="fn"><a href="#fn-2">[2]</a></sup></p>
@@ -110,7 +112,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p>Bilimsel literatürde bu durumla ilişkili olarak white dreams (beyaz rüyalar) kavramı kullanılmaktadır.</p>
 <p>Bu kavram, kişinin rüya gördüğüne dair bir izlenime sahip olmasına rağmen rüyanın içeriğini anlatamamasını ifade eder.</p>
 <p>Bunun olası açıklamalarından biri, rüya deneyiminin hafızaya yeterince kaydedilememesi veya uyandıktan sonra hatırlanamamasıdır.<sup class="fn"><a href="#fn-5">[5]</a></sup></p>
-<p>Dolayısıyla bazen rüyanın kendisini değil, yalnızca <strong>rüya</strong><strong>görmüş</strong><strong>olduğumuz</strong><strong>hissini</strong> hatırlarız.</p>
+<p>Dolayısıyla bazen rüyanın kendisini değil, yalnızca <strong>rüya görmüş olduğumuz hissini</strong> hatırlarız.</p>
 <h2 id="b6">6. Rüyaların Hatırlanmasında Yaş, Uyku Düzeni ve İlginin Etkisi Var mıdır?</h2>
 <p>Evet. Rüya hatırlama sıklığı yalnızca uykunun hangi evresinden uyanıldığıyla açıklanamaz.</p>
 <p>2025 yılında yayımlanan ve 217 yetişkinin incelendiği bir araştırmada; rüyalara yönelik ilgi, zihnin gündüz kendiliğinden farklı düşüncelere yönelme eğilimi, uyku düzeni ve bazı bireysel özelliklerin rüya hatırlamayla ilişkili olduğu belirlenmiştir.<sup class="fn"><a href="#fn-5">[5]</a></sup></p>
@@ -138,7 +140,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p>Bazı rüyaları hatırlarken bazılarını unutmamızın temelinde hafıza, uyku evreleri, uyanma zamanı, duygusal deneyimler ve bireysel farklılıklar bulunmaktadır.</p>
 <p>Bilimsel araştırmalar, rüyanın görülmesi ile hafızaya kaydedilmesinin birbirinden farklı süreçler olduğunu göstermektedir.</p>
 <p>Bir insan çok uzun ve canlı bir rüya gördüğü hâlde sabah hiçbir şey hatırlamayabilir. Buna karşılık birkaç saniyelik bir rüya sahnesini yıllarca unutmayabilir.</p>
-<p class="callout"><strong>Sonuç</strong><strong>olarak</strong><strong>, </strong><strong>bir</strong><strong>rüyanın</strong><strong>hafızamızda</strong><strong>uzun</strong><strong>süre</strong><strong>kalması</strong><strong>onun</strong><strong>mutlaka</strong><strong>daha</strong><strong>önemli</strong><strong>veya</strong><strong>daha</strong><strong>anlamlı</strong><strong>olduğu</strong><strong>anlamına</strong><strong>gelmez</strong><strong>. </strong><strong>Aynı</strong><strong>şekilde</strong><strong>bir</strong><strong>rüyayı</strong><strong>unutmamız</strong><strong> da o </strong><strong>rüyanın</strong><strong>hiç</strong><strong>görülmediğini</strong><strong>göstermez</strong><strong>.</strong></p>
+<p class="callout"><strong>Sonuç olarak, bir rüyanın hafızamızda uzun süre kalması onun mutlaka daha önemli veya daha anlamlı olduğu anlamına gelmez. Aynı şekilde bir rüyayı unutmamız da o rüyanın hiç görülmediğini göstermez.</strong></p>
 <h2 id="b10">Dipnotlar ve kaynakça</h2>
 <h4>A. Bilimsel kaynaklar</h4>
 <p class="ref" id="fn-1"><span class="ref-n">[1]</span> Scarpelli, Serena ve diğerleri (2022). “What About Dreams? State of the Art and Open Questions.” Journal of Sleep Research, 31(4), e13609. Rüya görme, uyku evreleri ve rüyaların hatırlanması üzerine bilimsel değerlendirme.</p>

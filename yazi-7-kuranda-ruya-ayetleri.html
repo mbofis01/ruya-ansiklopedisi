@@ -25,11 +25,11 @@ nav a:hover{color:#e5c48c}
 .art-hero small{color:#e8d9bb;letter-spacing:3px;font:12px Arial,sans-serif}
 .art-hero h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:12px 0 10px;color:#f1d5a1}
 .art-hero p{color:#c6d0da;margin:0;font-size:17px}
-.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px 1fr;gap:50px;align-items:start}
+.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:50px;align-items:start}
 .toc{position:sticky;top:130px;font:13px/1.5 Arial,sans-serif;border-left:2px solid var(--gold);padding-left:16px}
 .toc strong{color:var(--navy);display:block;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;font-size:12px}
 .toc ol{margin:0;padding-left:18px}.toc li{margin:6px 0;color:var(--muted)}.toc a:hover{color:var(--gold)}
-.art{max-width:760px;font-size:17px}
+.art{max-width:760px;font-size:17px;min-width:0}
 .art h2{color:var(--navy);font-size:27px;line-height:1.3;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 .art h2:first-child{margin-top:0}
 .art h3{color:var(--navy);font-size:21px;margin:32px 0 8px}
@@ -59,8 +59,10 @@ td.ar{font-family:"Traditional Arabic","Amiri","Noto Naskh Arabic",serif;font-si
 .pn span{color:var(--navy);font-weight:bold}.pn.next{text-align:right}
 footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
 footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
-@media(max-width:900px){.art-wrap{grid-template-columns:1fr;gap:24px}.toc{position:static}}
+@media(max-width:900px){.art-wrap{grid-template-columns:minmax(0,1fr);gap:24px}.toc{position:static}}
 @media(max-width:520px){.nav{gap:10px 16px}.nav a{font-size:12px}.art{font-size:16px}.art h2{font-size:23px}.prevnext{grid-template-columns:1fr}.art .ar{font-size:22px}}
+@media(max-width:640px){header{padding:8px 4%}.brand-row{gap:6px;padding-bottom:6px;flex-wrap:nowrap}.hoca-link{font-size:14px;gap:6px;padding:3px 6px;letter-spacing:0;white-space:nowrap}.tree-icon,.ruya-logo{width:26px;height:26px}.nav{gap:4px 14px;padding-top:6px}nav a{font-size:12px}html{scroll-padding-top:110px}}
+.art .ref,.art .ref-link,.art .src-link,.art .ref-note{overflow-wrap:anywhere}
 
 </style>
 </head>
@@ -79,14 +81,14 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <aside class="toc"><strong>Bu yazıda</strong><ol><li><a href="#b1">I. Hz. Yusuf&#x27;un rüyası ve rüyanın gerçekleşmesi</a></li><li><a href="#b6">II. Hz. Yusuf&#x27;un zindan arkadaşlarının rüyaları</a></li><li><a href="#b9">III. Mısır hükümdarının rüyası ve Hz. Yusuf&#x27;un yorumu</a></li><li><a href="#b17">IV. Hz. İbrahim&#x27;in rüyası</a></li><li><a href="#b20">V. Hz. Muhammed&#x27;in rüyaları</a></li><li><a href="#b23">VI. Rüya kavramının farklı bağlamlarda kullanıldığı ayetler</a></li><li><a href="#b27">Kur&#x27;an&#x27;daki rüya ayetlerinin toplu fihristi</a></li><li><a href="#b28">Kur&#x27;an&#x27;da rüyayla ilgili kullanılan başlıca Arapça kavramlar</a></li><li><a href="#b29">Kaynaklar</a></li></ol></aside>
 <article class="art">
 <p>Kur&#x27;an-ı Kerim&#x27;de rüya, yalnızca peygamberlerin yaşadığı bir tecrübe olarak değil, peygamber olmayan insanların da gördüğü ve yorumlanmasını istediği bir olay olarak anlatılır.</p>
-<p>Özellikle <strong>Yusuf </strong><strong>Suresi</strong>, rüyaların görülmesi, anlatılması, yorumlanması ve gerçekleşmesi bakımından Kur&#x27;an&#x27;ın en kapsamlı anlatımını içerir.</p>
+<p>Özellikle <strong>Yusuf Suresi</strong>, rüyaların görülmesi, anlatılması, yorumlanması ve gerçekleşmesi bakımından Kur&#x27;an&#x27;ın en kapsamlı anlatımını içerir.</p>
 <p>Ayetleri üç grupta incelemek daha doğru olacaktır:</p>
 <ul>
 <li>Rüyaların doğrudan anlatıldığı ayetler.</li>
 <li>Rüya tabirinin ve rüyaların gerçekleşmesinin anlatıldığı ayetler.</li>
 <li>Rüya kavramının farklı bağlamlarda kullanıldığı ayetler.</li>
 </ul>
-<p>Aşağıda ayetlerin <strong>Arapça</strong><strong>metinlerini</strong><strong>tam</strong><strong>olarak</strong>, Türkçe anlamlarını ise anlaşılır bir çeviriyle veriyorum. Türkçe metinler, belirli bir mealin birebir aktarımı değil; ayetlerin anlamını koruyan çevirilerdir.</p>
+<p>Aşağıda ayetlerin <strong>Arapça metinlerini tam olarak</strong>, Türkçe anlamlarını ise anlaşılır bir çeviriyle veriyorum. Türkçe metinler, belirli bir mealin birebir aktarımı değil; ayetlerin anlamını koruyan çevirilerdir.</p>
 <h2 id="b1">I. Hz. Yusuf&#x27;un rüyası ve rüyanın gerçekleşmesi</h2>
 <h3 id="b2">1. Yusuf Suresi, 12/4 — Hz. Yusuf&#x27;un çocukluk rüyası</h3>
 <p>Arapça</p>
@@ -199,10 +201,10 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p><strong>Konusu:</strong> Hz. Yusuf&#x27;un kendisine verilen yorumlama bilgisi için Allah&#x27;a şükretmesi.</p>
 <h2 id="b27">Kur&#x27;an&#x27;daki rüya ayetlerinin toplu fihristi</h2>
 <div class="table-wrap"><table><thead><tr><th>Sure ve ayet</th><th>Konusu</th></tr></thead><tbody><tr><td>Yusuf 12/4</td><td>Hz. Yusuf&#x27;un rüyası</td></tr><tr><td>Yusuf 12/5</td><td>Rüyanın kardeşlere anlatılmaması</td></tr><tr><td>Yusuf 12/6</td><td>Rüya yorumlama bilgisinin öğretilmesi</td></tr><tr><td>Yusuf 12/36</td><td>İki zindan arkadaşının rüyaları</td></tr><tr><td>Yusuf 12/41</td><td>Zindan arkadaşlarının rüyalarının yorumu</td></tr><tr><td>Yusuf 12/43</td><td>Hükümdarın yedi inek rüyası</td></tr><tr><td>Yusuf 12/44</td><td>Karmaşık düşler</td></tr><tr><td>Yusuf 12/45</td><td>Rüya yorumcusuna başvurma</td></tr><tr><td>Yusuf 12/46</td><td>Hz. Yusuf&#x27;tan yorum istenmesi</td></tr><tr><td>Yusuf 12/47–49</td><td>Bolluk ve kıtlık yıllarının yorumu</td></tr><tr><td>Yusuf 12/100</td><td>Hz. Yusuf&#x27;un rüyasının gerçekleşmesi</td></tr><tr><td>Yusuf 12/101</td><td>Rüya ve olayları yorumlama bilgisi</td></tr><tr><td>Enfâl 8/43</td><td>Bedir öncesi Hz. Peygamber&#x27;in rüyası</td></tr><tr><td>İsrâ 17/60</td><td>Hz. Peygamber&#x27;e gösterilen görüntü</td></tr><tr><td>Enbiyâ 21/5</td><td>Karmaşık düşler ithamı</td></tr><tr><td>Sâffât 37/102</td><td>Hz. İbrahim&#x27;in rüyası</td></tr><tr><td>Sâffât 37/105</td><td>Hz. İbrahim&#x27;in rüyasının doğrulanması</td></tr><tr><td>Fetih 48/27</td><td>Hz. Peygamber&#x27;in rüyasının gerçekleşmesi</td></tr></tbody></table></div>
-<p>Bu listede <strong>20 </strong><strong>ayet</strong> yer almaktadır. Bunların bir kısmında doğrudan rüya kelimesi geçerken diğerlerinde rüya anlatısı, tabiri veya te&#x27;vili bulunmaktadır. Dolayısıyla 20 sayısı, Kur&#x27;an&#x27;da rü&#x27;yâ kelimesinin 20 defa geçtiği anlamına gelmez.</p>
+<p>Bu listede <strong>20 ayet</strong> yer almaktadır. Bunların bir kısmında doğrudan rüya kelimesi geçerken diğerlerinde rüya anlatısı, tabiri veya te&#x27;vili bulunmaktadır. Dolayısıyla 20 sayısı, Kur&#x27;an&#x27;da rü&#x27;yâ kelimesinin 20 defa geçtiği anlamına gelmez.</p>
 <h2 id="b28">Kur&#x27;an&#x27;da rüyayla ilgili kullanılan başlıca Arapça kavramlar</h2>
 <div class="table-wrap"><table><thead><tr><th>Arapça</th><th>Okunuşu</th><th>Anlamı</th></tr></thead><tbody><tr><td dir=rtl class=ar>الرُّؤْيَا</td><td>er-Rü&#x27;yâ</td><td>Rüya, görü</td></tr><tr><td dir=rtl class=ar>الْمَنَام</td><td>el-Menâm</td><td>Uyku, uyku hâli</td></tr><tr><td dir=rtl class=ar>الْأَحْلَام</td><td>el-Ahlâm</td><td>Düşler, rüyalar</td></tr><tr><td dir=rtl class=ar>أَضْغَاثُ أَحْلَام</td><td>Adğâsü ahlâm</td><td>Karmaşık düşler</td></tr><tr><td dir=rtl class=ar>تَأْوِيل</td><td>Te&#x27;vîl</td><td>Yorum, anlamın açıklanması</td></tr><tr><td dir=rtl class=ar>تَعْبُرُونَ</td><td>Ta&#x27;burûn</td><td>Rüya yorumlamak</td></tr><tr><td dir=rtl class=ar>صَدَّقْتَ الرُّؤْيَا</td><td>Saddakte&#x27;r-rü&#x27;yâ</td><td>Rüyayı doğruladın</td></tr></tbody></table></div>
-<p>Özellikle <strong>Yusuf</strong><strong> 12/43&#x27;teki </strong><strong>تَعْبُرُونَ</strong><strong> (</strong><strong>ta&#x27;burûn</strong><strong>)</strong> kelimesi dikkat çekicidir. Klasik İslam literatüründe rüya yorumlama ilmi için kullanılan ta&#x27;bîrü&#x27;r-rü&#x27;yâ ifadesiyle aynı köktendir.</p>
+<p>Özellikle <strong>Yusuf 12/43&#x27;teki تَعْبُرُونَ (ta&#x27;burûn)</strong> kelimesi dikkat çekicidir. Klasik İslam literatüründe rüya yorumlama ilmi için kullanılan ta&#x27;bîrü&#x27;r-rü&#x27;yâ ifadesiyle aynı köktendir.</p>
 <h2 id="b29">Kaynaklar</h2>
 <p class="ref-note">Ayetlerin Arapça metinleri ve Türkçe meallerini karşılaştırmak için şu kaynaklardan yararlanabilirsiniz:</p>
 <ul>
@@ -210,8 +212,8 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <li><a href="https://islamarsivi.com/kuran-meali/fihrist/ruya/" target="_blank" rel="noopener">Rüya ayetleri – Arapça metin ve Diyanet meali</a></li>
 <li><a href="https://corpus.quran.com/" target="_blank" rel="noopener">Quranic Arabic Corpus – Kur&#x27;an kelimelerinin dilbilgisel incelemesi</a></li>
 </ul>
-<p class="ref-note"><strong>Önemli</strong><strong>bir</strong><strong>ayrım</strong><strong>:</strong> Bu derleme, rüyayı doğrudan anlatan ve rüya yorumuyla açıkça ilişkili ayetleri kapsar. Uykuya, uyku sırasında ruhun alınmasına veya uyku ile ölüme ilişkin ayetler (örneğin Zümer 39/42, Rûm 30/23, Nebe 78/9) bu listeye dahil edilmemiştir. Bunlar rüya konusuyla dolaylı olarak ilişkili ayrı bir başlık altında incelenebilir.</p>
-<p class="ref-note">Rüya araştırmanız bakımından Kur&#x27;an&#x27;daki en dikkat çekici sonuç şudur: <strong>Kur&#x27;an</strong><strong>, </strong><strong>rüyayı</strong><strong>yalnızca</strong><strong>peygamberlere</strong><strong>mahsus</strong><strong>bir</strong><strong>tecrübe</strong><strong>olarak</strong><strong>anlatmaz</strong><strong>. Hz. </strong><strong>Yusuf&#x27;un</strong><strong>zindan</strong><strong>arkadaşları</strong><strong>ve</strong><strong>Mısır</strong><strong>hükümdarı</strong><strong>gibi</strong><strong>peygamber</strong><strong>olmayan</strong><strong>kişilerin</strong><strong>rüyalarına</strong><strong> da </strong><strong>yer</strong><strong>verir</strong><strong>.</strong> Bu, İslam&#x27;da rüya tabiri konusunun değerlendirilmesinde temel bir başlangıç noktasıdır.</p>
+<p class="ref-note"><strong>Önemli bir ayrım:</strong> Bu derleme, rüyayı doğrudan anlatan ve rüya yorumuyla açıkça ilişkili ayetleri kapsar. Uykuya, uyku sırasında ruhun alınmasına veya uyku ile ölüme ilişkin ayetler (örneğin Zümer 39/42, Rûm 30/23, Nebe 78/9) bu listeye dahil edilmemiştir. Bunlar rüya konusuyla dolaylı olarak ilişkili ayrı bir başlık altında incelenebilir.</p>
+<p class="ref-note">Rüya araştırmanız bakımından Kur&#x27;an&#x27;daki en dikkat çekici sonuç şudur: <strong>Kur&#x27;an, rüyayı yalnızca peygamberlere mahsus bir tecrübe olarak anlatmaz. Hz. Yusuf&#x27;un zindan arkadaşları ve Mısır hükümdarı gibi peygamber olmayan kişilerin rüyalarına da yer verir.</strong> Bu, İslam&#x27;da rüya tabiri konusunun değerlendirilmesinde temel bir başlangıç noktasıdır.</p>
 </article>
 </main>
 <nav class="prevnext"><a class="pn prev" href="yazi-6-peygamberlerin-ruyalari.html"><small>← Önceki yazı</small><span>Peygamberlerin Rüyaları ile Diğer İnsanların Rüyaları Arasında Nasıl Bir Fark Vardır?</span></a><a class="pn next" href="yazi-8-hadislerde-ruya.html"><small>Sonraki yazı →</small><span>Hadislerde Rüya</span></a></nav>

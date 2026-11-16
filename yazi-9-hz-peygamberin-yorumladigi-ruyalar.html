@@ -25,11 +25,11 @@ nav a:hover{color:#e5c48c}
 .art-hero small{color:#e8d9bb;letter-spacing:3px;font:12px Arial,sans-serif}
 .art-hero h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:12px 0 10px;color:#f1d5a1}
 .art-hero p{color:#c6d0da;margin:0;font-size:17px}
-.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px 1fr;gap:50px;align-items:start}
+.art-wrap{max-width:1160px;margin:auto;padding:50px 22px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:50px;align-items:start}
 .toc{position:sticky;top:130px;font:13px/1.5 Arial,sans-serif;border-left:2px solid var(--gold);padding-left:16px}
 .toc strong{color:var(--navy);display:block;margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;font-size:12px}
 .toc ol{margin:0;padding-left:18px}.toc li{margin:6px 0;color:var(--muted)}.toc a:hover{color:var(--gold)}
-.art{max-width:760px;font-size:17px}
+.art{max-width:760px;font-size:17px;min-width:0}
 .art h2{color:var(--navy);font-size:27px;line-height:1.3;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 .art h2:first-child{margin-top:0}
 .art h3{color:var(--navy);font-size:21px;margin:32px 0 8px}
@@ -59,8 +59,10 @@ td.ar{font-family:"Traditional Arabic","Amiri","Noto Naskh Arabic",serif;font-si
 .pn span{color:var(--navy);font-weight:bold}.pn.next{text-align:right}
 footer{background:#102235;color:#d5dce3;padding:45px 20px;text-align:center}
 footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
-@media(max-width:900px){.art-wrap{grid-template-columns:1fr;gap:24px}.toc{position:static}}
+@media(max-width:900px){.art-wrap{grid-template-columns:minmax(0,1fr);gap:24px}.toc{position:static}}
 @media(max-width:520px){.nav{gap:10px 16px}.nav a{font-size:12px}.art{font-size:16px}.art h2{font-size:23px}.prevnext{grid-template-columns:1fr}.art .ar{font-size:22px}}
+@media(max-width:640px){header{padding:8px 4%}.brand-row{gap:6px;padding-bottom:6px;flex-wrap:nowrap}.hoca-link{font-size:14px;gap:6px;padding:3px 6px;letter-spacing:0;white-space:nowrap}.tree-icon,.ruya-logo{width:26px;height:26px}.nav{gap:4px 14px;padding-top:6px}nav a{font-size:12px}html{scroll-padding-top:110px}}
+.art .ref,.art .ref-link,.art .src-link,.art .ref-note{overflow-wrap:anywhere}
 
 </style>
 </head>
@@ -80,7 +82,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <article class="art">
 <p>İslam tarihinde rüya tabirinin en önemli kaynaklarından biri, Hz. Muhammed&#x27;in (s.a.v.) gördüğü ve yorumladığı rüyalar ile sahabenin kendisine anlattığı rüyalara yaptığı açıklamalardır.</p>
 <p>Hz. Peygamber&#x27;in rüya yorumlarında dikkat çeken husus, rüyada görülen bir nesnenin her zaman görüldüğü şekliyle değerlendirilmemesidir. Bazen süt ilmi, gömlek dini, bağ bereketi, anahtar ise fetih ve hâkimiyeti temsil edebilir.</p>
-<p>Ancak bu sembollerin tamamı için değişmez bir anlam sözlüğü oluşturmak doğru değildir. <strong>Bir </strong><strong>sembolün</strong><strong>belirli</strong><strong>bir</strong><strong>hadiste</strong><strong>taşıdığı</strong><strong>anlam</strong><strong>, </strong><strong>bütün</strong><strong>insanların</strong><strong>bütün</strong><strong>rüyalarında</strong><strong>aynı</strong><strong>anlamı</strong><strong>taşıdığı</strong><strong>sonucunu</strong><strong>doğurmaz</strong><strong>.</strong></p>
+<p>Ancak bu sembollerin tamamı için değişmez bir anlam sözlüğü oluşturmak doğru değildir. <strong>Bir sembolün belirli bir hadiste taşıdığı anlam, bütün insanların bütün rüyalarında aynı anlamı taşıdığı sonucunu doğurmaz.</strong></p>
 <p>Bu çalışmada üç tür rivayeti birbirinden ayıracağız: Hz. Peygamber&#x27;in bizzat yorumladığı sahabe rüyaları, kendi rüyalarını açıkladığı rivayetler ve rüya tabirinin nasıl yapılması gerektiğini gösteren hadisler.</p>
 <h2 id="b1">1. Rüyada süt görmek: İlim</h2>
 <p>Hz. Peygamber, bir rüyasında kendisine bir kap süt verildiğini, bu sütten doyuncaya kadar içtiğini ve kalanını Hz. Ömer&#x27;e verdiğini anlatmıştır.</p>
@@ -94,7 +96,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p>İlim de insanın manevi ve zihinsel gelişimine katkıda bulunur.</p>
 <p>Bu nedenle süt ile ilim arasında besleyicilik bakımından bir anlam ilişkisi kurulabilir. Bu açıklama, hadiste doğrudan belirtilen gerekçe değil, sembolik yorumun anlaşılmasına yönelik bir değerlendirmedir.</p>
 <p>Hz. Peygamber&#x27;in rüyasında sütü Hz. Ömer&#x27;e vermesi de ilmin aktarılmasıyla ilişkilidir.</p>
-<p><strong>Tabir </strong><strong>ilkesi</strong><strong>:</strong> Rüyada görülen nesnenin temel özelliğinden hareketle manevi bir anlam kurulabilir.</p>
+<p><strong>Tabir ilkesi:</strong> Rüyada görülen nesnenin temel özelliğinden hareketle manevi bir anlam kurulabilir.</p>
 <h2 id="b3">2. Rüyada gömlek görmek: Din</h2>
 <p>Hz. Peygamber, bir rüyasında insanların üzerinde farklı uzunluklarda gömlekler bulunduğunu görmüştür.</p>
 <p>Bazılarının gömlekleri göğüslerine kadar uzanırken bazıları daha kısadır. Hz. Ömer&#x27;in gömleği ise yerde sürünecek kadar uzundur.</p>
@@ -107,7 +109,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p>Gömlek, insanın bedenini örter ve korur. Din de insanın hayatını düzenleyen, ahlaki davranışlarına yön veren ve onu manevi açıdan koruyan bir rehber olarak değerlendirilebilir.</p>
 <p>Rüyadaki gömleklerin uzunluklarının farklı olması, kişilerin dinî durumlarındaki farklılıklara işaret edecek şekilde yorumlanmıştır.</p>
 <p>Hz. Ömer&#x27;in uzun gömleği ise onun dinî bağlılığının kuvvetine işaret eder.</p>
-<p><strong>Tabir </strong><strong>ilkesi</strong><strong>:</strong> Maddi bir nesnenin işlevi, manevi bir kavramla ilişkilendirilebilir.</p>
+<p><strong>Tabir ilkesi:</strong> Maddi bir nesnenin işlevi, manevi bir kavramla ilişkilendirilebilir.</p>
 <h2 id="b5">3. Rüyada iki altın bilezik görmek: İki yalancı</h2>
 <p>Hz. Peygamber, rüyasında kollarında iki altın bilezik gördüğünü ve bundan rahatsızlık duyduğunu anlatmıştır.</p>
 <p>Rüyasında bu bileziklere üflemesi kendisine bildirilmiş, üflediğinde bilezikler uçup gitmiştir.</p>
@@ -192,7 +194,7 @@ footer strong{color:#e6c68f;font-size:22px}footer p{font:13px Arial,sans-serif}
 <p>Bu rivayetlerde süt, gömlek, kılıç, inek, su ve başka nesneler, görünen şekillerinin ötesinde anlamlar taşıyabilmektedir.</p>
 <p>Ancak hadislerdeki örneklerden hareketle bütün rüyalar için değişmez bir sembol sözlüğü oluşturmak mümkün değildir.</p>
 <p>Özellikle Hz. Ebû Bekir&#x27;in yorumuna verilen cevap, rüya tabirinin ne kadar dikkat gerektirdiğini göstermektedir.</p>
-<p class="callout"><strong>Rüya</strong><strong>yorumunda</strong><strong>önemli</strong><strong>olan</strong><strong>yalnızca</strong><strong>sembolü</strong><strong>tanımak</strong><strong>değil</strong><strong>; </strong><strong>rüyanın</strong><strong>bütününü</strong><strong>, </strong><strong>gören</strong><strong>kişinin</strong><strong>durumunu</strong><strong>, </strong><strong>dinî</strong><strong>kaynakları</strong><strong>ve</strong><strong>yorumun</strong><strong>yanılabilirliğini</strong><strong>birlikte</strong><strong>değerlendirmektir</strong><strong>.</strong></p>
+<p class="callout"><strong>Rüya yorumunda önemli olan yalnızca sembolü tanımak değil; rüyanın bütününü, gören kişinin durumunu, dinî kaynakları ve yorumun yanılabilirliğini birlikte değerlendirmektir.</strong></p>
 <p>Bu sebeple hadislerdeki rüya örneklerini, her insanın rüyasına otomatik olarak uygulanacak kesin hükümler şeklinde değil, klasik İslam rüya tabiri anlayışını açıklayan kaynaklar olarak kullanmak daha isabetlidir.</p>
 <h3 id="b16">Başlıca kaynaklar</h3>
 <ul>
